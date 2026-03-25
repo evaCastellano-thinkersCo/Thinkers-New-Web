@@ -3113,6 +3113,17 @@ label {
         width: 50%;
     }
 
+    .cs_slider_3.anim_blog {
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cs_slider_3.anim_blog .swiper-slide {
+        width: 100%;
+        min-width: 100%;
+    }
+
     /*  slider 5 */
     .cs_slider_5 {
         width: 100%;
@@ -3163,6 +3174,17 @@ label {
 
     .cs_slider_3 .swiper-slide {
         width: 100%;
+    }
+
+    .cs_slider_3.anim_blog {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cs_slider_3.anim_blog .swiper-slide {
+        width: 100%;
+        min-width: 100%;
     }
 }
 
@@ -3531,7 +3553,7 @@ label {
 
 .cs_site_header_full_width .container {
     max-width: 100%;
-    padding: 0 100px;
+    padding: 0 50px;
 }
 
 .cs_site_header_style1 {
@@ -5172,7 +5194,7 @@ TODO: botón home "que hacemos"
 */
 .cs_round_btn_wrap {
     padding: 15px;
-    /*margin: -15px;*/
+    margin-left: 0;
     display: inline-block;
     border-radius: 15px;
     background-color: var(--accent-color);
