@@ -29,6 +29,11 @@
 .cs_featured_case_item {
   flex: 1 1 0;
   min-width: 0;
+  .cs_featured_case_link {
+    display: block;
+    height: 100%;
+    color: inherit;
+  }
   .cs_post_thumb {
     aspect-ratio: 1 / 1;
     overflow: hidden;
