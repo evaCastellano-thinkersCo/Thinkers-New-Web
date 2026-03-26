@@ -20,6 +20,17 @@
   }
 }
 
+.cs_featured_cases_grid {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.cs_featured_case_item {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .cs_post.cs_style_2 {
   display: block;
   .cs_post_info {
@@ -38,6 +49,17 @@
       padding-top: 40px;
       padding-bottom: 60px;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cs_featured_cases_grid {
+    flex-direction: column;
+  }
+
+  .cs_featured_case_item .cs_post_thumb img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 }
 
