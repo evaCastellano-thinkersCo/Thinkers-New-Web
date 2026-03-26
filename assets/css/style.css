@@ -58,7 +58,7 @@
 :root {
     --body-font-family: "Manrope", "Helvetica", "Arial", sans-serif;
     --heading-font-family: "Inter Tight", sans-serif;
-    --accent-color: #ff6b00;
+    --accent-color: #F79837;
     --body-color: #454545;
     --heading-color: #101010;
     --primary-color: #101010;
@@ -72,7 +72,7 @@
 .dark {
     --drak-color: #181818;
     --cr_banner-color: #181818;
-    --accent-color: #ff6b00;
+    --accent-color: #F79837;
     --body-color: #e0e0e0;
     --heading-color: #ffffff;
     --primary-color: #ffffff;
