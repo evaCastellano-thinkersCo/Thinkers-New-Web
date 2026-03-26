@@ -70,25 +70,27 @@
 
 
     /* colores */
-    --gray_100:#F5F7FA;
-    --gray-200:#E6EAF0;
+
+    --gray_00: #ffffff;
+    --gray_100: #F5F7FA;
+    --gray-200: #E6EAF0;
 
     /* botones */
     --default-btn-primary: #F79837;
     --hover-btn-primary: #D97A1E;
-    --focus-btn-primary: #A65C15;
+    --active-btn-primary: #A65C15;
     --disabled-btn-primary: #C4CBD6;
     --btn-primary-color: #F5F7FA;
 
     --default-btn-secondary: #ffffff;
     --hover-btn-secondary: #F5F7FA;
-    --focus-btn-secondary: #E6EAF0;
+    --active-btn-secondary: #E6EAF0;
     --disabled-secondary: #C4CBD6;
     --btn-secondary-color: #2A3138;
 
     --default-btn-tertiary: #ffffff00;
     --hover-btn-tertiary: #F5F7FA;
-    --focus-btn-tertiary: #E6EAF0;
+    --active-btn-tertiary: #E6EAF0;
     --disabled-secondary: #C4CBD6;
     --btn-tertiary-color: #2A3138;
 
@@ -990,12 +992,16 @@ hr {
     background-color: #181818;
 }
 
+.gray_00{
+    background-color: var(--gray-00);
+}
+
 .gray_100 {
-    background: var(--gray-100);
+    background-color: var(--gray-100);
 }
 
 .gray_200 {
-    background: var(--gray-200);
+    background-color: var(--gray-200);
 }
 
 .dark .gray_200 {
@@ -5243,8 +5249,8 @@ label {
     color: var(--btn-primary-color);
 }
 
-.btn_primary:focus {
-    background-color: var(--focus-btn-primary);
+.btn_primary:active {
+    background-color: var(--active-btn-primary);
     color: var(--btn-primary-color);
 }
 
@@ -5260,8 +5266,8 @@ label {
     background-color: var(--hover-btn-secondary);
 }
 
-.btn_secondary:focus {
-    background-color: var(--focus-btn-secondary);
+.btn_secondary:active {
+    background-color: var(--active-btn-secondary);
 }
 
 /* Terciario */
@@ -5277,8 +5283,8 @@ label {
     border: 0;
 }
 
-.btn_tertiary:focus {
-    background-color: var(--focus-btn-tertiary);
+.btn_tertiary:active {
+    background-color: var(--active-btn-tertiary);
     border: 0;
 }
 
