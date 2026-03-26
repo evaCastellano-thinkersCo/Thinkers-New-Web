@@ -67,6 +67,17 @@
     --common-color-white: #ffffff;
     --common-color-black: #000000;
     --drak-color: #ffffff;
+
+    /* botones */
+    --default-primary: #F79837;
+    --hover-primary: #D97A1E;
+    --focus-primary: #A65C15;
+    --disabled-primary: #C4CBD6;
+
+    --hover-secondary: #F5F7FA;
+    --focus-secondary: #E6EAF0;
+    --disabled-secondary: #C4CBD6;
+
 }
 
 .dark {
@@ -4894,6 +4905,17 @@ label {
     padding-left: 52%;
 }
 
+.cs_hero.cs_style1 .cs_hero_actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.cs_hero.cs_style1 .cs_hero_actions .cs_round_btn_wrap {
+    margin: 0;
+}
+
 .cs_hero.cs_style1 .cs_hero_mini_title {
     font-size: 18px;
     line-height: 1.6em;
@@ -5204,6 +5226,13 @@ TODO: botón home "que hacemos"
     margin: 1rem;
 }
 
+.btn_primary {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+
+
 .cs_round_btn_wrap .cs_hero_btn {
     color: inherit;
 }
@@ -5230,19 +5259,19 @@ TODO: botón home "que hacemos"
     color: var(--accent-color);
 }
 
-.cs_round_btn_wrap.btn_secundary {
+.cs_round_btn_wrap.btn_secondary {
     background-color: #fff;
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
 
-.cs_round_btn_wrap.btn_secundary:hover {
+.cs_round_btn_wrap.btn_secondary:hover {
     background-color: var(--accent-color);
     border: 1px solid #fff;
     color: #fff;
 }
 
-.cs_round_btn_wrap.btn_secundary:hover .cs_hero_btn {
+.cs_round_btn_wrap.btn_secondary:hover .cs_hero_btn {
     color: #fff;
 }
 
@@ -5413,6 +5442,11 @@ TODO: botón home "que hacemos"
 @media screen and (max-width: 767px) {
     .cs_hero.cs_style1 .cs_hero_text_in {
         padding-left: 0%;
+    }
+
+    .cs_hero.cs_style1 .cs_hero_actions {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .cs_hero.cs_style1 .cs_hero_bg {
