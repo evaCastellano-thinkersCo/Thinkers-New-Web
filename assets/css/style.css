@@ -56,23 +56,23 @@
 @import url('https://fonts.googleapis.com/css2?family=family=Manrope:wght@200..800&display=swap');
 
 :root {
-    --body-font-family: "Manrope", "Helvetica", "Arial", sans-serif;
+    --body-font-family: "montserrat";
     --heading-font-family: "Inter Tight", sans-serif;
     --accent-color: #F79837;
-    --body-color: #454545;
-    --heading-color: #101010;
-    --primary-color: #101010;
+    --body-color:  #6E7681; /* parrafos */
+    --heading-color: #131416; /* títulos */
+    --primary-color: #6E7681;
     --cr_banner-color: #f4f4f4;
     --border-color: #c1c1c1;
-    --common-color-white: #ffffff;
-    --common-color-black: #000000;
+    --common-color-white: #F5F7FA;
+    --common-color-black: #131416;
     --drak-color: #ffffff;
 
 
     /* colores */
 
-    --gray_00: #ffffff;
-    --gray_100: #F5F7FA;
+    --gray-00: #ffffff;
+    --gray-100: #F5F7FA;
     --gray-200: #E6EAF0;
 
     /* botones */
@@ -103,17 +103,21 @@
     --drak-color: #181818;
     --cr_banner-color: #181818;
     --accent-color: #F79837;
-    --body-color: #e0e0e0;
-    --heading-color: #ffffff;
+    --body-color: #C4CBD6; /* parrafos */
+    --heading-color: #F5F7FA; /* títulos */
     --primary-color: #ffffff;
-    --common-color-white: #000000;
-    --common-color-black: #ffffff;
+    --common-color-white: #F5F7FA;
+    --common-color-black: #131416;
 }
 
 
 /*--------------------------------------------------------------
 2. Typography
 ----------------------------------------------------------------*/
+
+*{
+    font-family: var(--body-font-family);
+}
 
 html,
 body,
@@ -140,16 +144,15 @@ h6 {
     font-weight: 700;
     line-height: 1.2em;
     color: var(--heading-color);
-    font-family: "Inter Tight", sans-serif;
 }
 
 .cs_primary_font {
-    font-family: "Inter Tight", sans-serif;
-}
-
-.cs_secondary_font {
     font-family: var(--body-font-family);
 }
+
+/*.cs_secondary_font {
+    font-family: var(--body-font-family);
+}*/
 
 h2 {
     font-size: 55px;
@@ -237,7 +240,6 @@ button {
 
 a:hover {
     text-decoration: none;
-    color: #ff6b00;
 }
 
 table {
@@ -313,7 +315,7 @@ kbd {
 
 input,
 textarea {
-    color: --primary-color;
+    color: var(--primary-color);
     transition: all 0.3s ease;
 }
 
@@ -334,12 +336,11 @@ textarea {
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--common-color-white);
 }
 
 .cs_preloader .loading {
     font-size: 90px;
-    font-family: "Helvetica", "Arial", "Montserrat", sans-serif;
     font-weight: 900;
     text-align: center;
 }
@@ -360,7 +361,7 @@ textarea {
 }
 
 .cs_preloader .loading05 span {
-    color: #000;
+    color: var(--heading-color);
     transform-origin: 50% 50% -25px;
     transform-style: preserve-3d;
     animation: loading05 1.6s infinite;
@@ -968,11 +969,11 @@ hr {
 
 .cs_white_color,
 .cs_white_color_hover:hover {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_primary_color {
-    color: --primary-color;
+    color: var(--primary-color);
 }
 
 .cs_ternary_color {
@@ -981,11 +982,11 @@ hr {
 
 .cs_accent_color,
 .cs_accent_color_hover:hover {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_white_bg {
-    background-color: #fff;
+    background-color: var(--common-color-white);
 }
 
 .cs_gray_bg {
@@ -1115,12 +1116,12 @@ hr {
 
 .cs_accent_bg,
 .cs_accent_bg_hover:hover {
-    background-color: #ff6b00;
+    background-color: var(--accent-color);
 }
 
 .cs_primary_bg,
 .cs_primary_bg_hover:hover {
-    background-color: #101010;
+    background-color: var(--common-color-black);
 }
 
 .cs_gradient_bg_1 {
@@ -1131,7 +1132,7 @@ hr {
     display: inline-flex;
     align-items: center;
     font-weight: 600;
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_text_btn svg {
@@ -1210,7 +1211,7 @@ hr {
 }
 
 .cs_btn.cs_style_1.cs_color_1 {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_btn.cs_style_1.cs_type_btn {
@@ -1270,8 +1271,8 @@ hr {
 }
 
 .cs_share_post .cs_share_btn_g .cs_share_btn:hover {
-    border: 1px solid #ff6b00;
-    color: #ff6b00;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
     transition: all 0.1s ease;
 }
 
@@ -1288,7 +1289,7 @@ hr {
     content: "";
     height: 22px;
     width: 2px;
-    background-color: #fff;
+    background-color: var(--common-color-white);
     display: inline-block;
     position: absolute;
     right: -1px;
@@ -1311,8 +1312,8 @@ hr {
 }
 
 .cs_pagination_item.active {
-    background-color: #ff6b00;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--common-color-white);
     pointer-events: none;
 }
 
@@ -1325,11 +1326,11 @@ hr {
     transition: all 0.3s ease;
     border: 2px solid #999696;
     background-color: transparent;
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_form_field:focus {
-    border-color: #ff6b00;
+    border-color: var(--accent-color);
 }
 
 label {
@@ -1360,7 +1361,7 @@ label {
     height: 20px;
     width: 2px;
     border-radius: 2px;
-    background-color: #fff;
+    background-color: var(--common-color-white);
     position: absolute;
     right: 0;
     top: 50%;
@@ -1394,7 +1395,7 @@ label {
 .cs_cursor_lg {
     width: 40px;
     height: 40px;
-    border: 1px solid #ff6b00;
+    border: 1px solid var(--accent-color);
     left: 0;
     top: 0;
     pointer-events: none;
@@ -1404,7 +1405,7 @@ label {
 .cs_cursor_sm {
     width: 8px;
     height: 8px;
-    background-color: #ff6b00;
+    background-color: var(--accent-color);
     left: 0;
     top: 0;
     pointer-events: none;
@@ -1508,7 +1509,7 @@ label {
 .cs_cricle.cs_style_1 .main {
     width: 88px;
     height: 88px;
-    border: 2px solid #ff6b00;
+    border: 2px solid var(--accent-color);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1537,7 +1538,7 @@ label {
 .cs_cricle.cs_style_1 .main2 {
     width: 138px;
     height: 138px;
-    border: 2px solid #ff6b00;
+    border: 2px solid var(--accent-color);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1552,7 +1553,7 @@ label {
 .cs_cricle.cs_style_1 .main2 .circle2 {
     width: 20px;
     height: 20px;
-    background: #ff6b00;
+    background: var(--accent-color);
     border-radius: 50%;
     position: absolute;
     top: 0px;
@@ -1574,7 +1575,7 @@ label {
     position: absolute;
     top: 50%;
     left: 50%;
-    border: 1px solid #ff6b00;
+    border: 1px solid var(--accent-color);
     width: 184px;
     height: 0px;
     opacity: 0.7;
@@ -1930,7 +1931,6 @@ label {
 .cs_section_heading.cs_style_1 .cs_section_title_3 {
     font-weight: 700;
     font-size: 45px;
-    margin-bottom: 0;
 }
 
 .cs_section_heading.cs_style_1 .cs_section_title_4 {
@@ -1944,7 +1944,7 @@ label {
 .cs_section_heading.cs_style_1.cs_color_1 .cs_section_title_3,
 .cs_section_heading.cs_style_1.cs_color_1 .cs_section_title_4,
 .cs_section_heading.cs_style_1.cs_color_1 .cs_section_subtitle {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_section_heading.cs_style_1.cs_type_1 {
@@ -2169,7 +2169,7 @@ label {
     top: -30px;
     height: 151px;
     width: 151px;
-    background: #ff6b00;
+    background: var(--accent-color);
     opacity: 0.8;
     filter: blur(125px);
 }
@@ -2190,7 +2190,7 @@ label {
 }
 
 .cs_page_heading.cs_style1 .breadcrumb-item.active {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_page_heading.cs_style1 .cs_page_title {
@@ -2205,7 +2205,7 @@ label {
     content: "";
     height: 17px;
     width: 1px;
-    background-color: #fff;
+    background-color: var(--common-color-white);
     padding: 0;
     position: relative;
     top: 5px;
@@ -2234,7 +2234,7 @@ label {
     width: 100%;
     right: -60px;
     bottom: -60px;
-    background-color: #ff6b00;
+    background-color: var(--accent-color);
     border-radius: inherit;
 }
 
@@ -2266,12 +2266,12 @@ label {
 .cs_tab_links.cs_style1 a {
     padding: 7px 20px;
     font-weight: 500;
-    color: #fff;
+    color: var(--common-color-white);
     display: inline-flex;
 }
 
 .cs_tab_links.cs_style1 li.active a {
-    background-color: #ff6b00;
+    background-color: var(--accent-color);
     border-radius: 10px;
 }
 
@@ -2347,7 +2347,7 @@ label {
 #lg-counter,
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .lg-toolbar .lg-icon:hover,
@@ -2360,7 +2360,6 @@ label {
     position: fixed;
     bottom: -60px;
     right: 40px;
-    color: #fff;
     padding: 5px;
     height: 50px;
     width: 50px;
@@ -2370,14 +2369,14 @@ label {
     cursor: pointer;
     transition: all 0.4s ease;
     z-index: 10;
-    background-color: #000000;
+    background-color: var(--common-color-black);
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
 }
 
 .cs_scrollup:hover {
-    background-color: #ff6b00;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--common-color-white);
 }
 
 .cs_scrollup.cs_scrollup_show {
@@ -2434,7 +2433,7 @@ label {
     position: absolute;
     height: 7px;
     width: 0%;
-    background-color: #ff6b00;
+    background-color: var(--accent-color);
     left: 0;
     bottom: 20px;
     z-index: -1;
@@ -2498,7 +2497,6 @@ label {
     letter-spacing: 2px;
     font-weight: 500;
     z-index: -1;
-    font-family: Inter Tight;
 }
 
 .cs_animated_badge .rounded_text svg {
@@ -2541,7 +2539,7 @@ label {
     position: absolute;
     top: 0;
     font-size: 18px;
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_field_group .cs_input_label {
@@ -2921,7 +2919,7 @@ label {
 }
 
 .cs_toggle .cs_mode_btn .active {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .dark .cs_site_header .cs_main_header .cs_main_header_in .cs_main_header_left .logo-dark {
@@ -3224,7 +3222,7 @@ label {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: var(--common-color-white);
     font-size: 68px;
     transition: all 0.3s ease;
     line-height: 48px;
@@ -3469,11 +3467,11 @@ label {
 }
 
 .cs_site_header.cs_style1 {
-    background-color: #fff;
+    background-color: var(--gray-00);
 }
 
 .cs_site_header.cs_style1.cs_sticky-active {
-    background-color: #fff;
+    background-color: var(--gray-00);
     box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
 }
 
@@ -3491,7 +3489,7 @@ label {
 }
 
 .cs_site_header.cs_style1 .cs_icon_btn.cs_color_1 {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_site_header.cs_style1 .cs_icon_btn .cs_icon_btn_in {
@@ -3596,7 +3594,7 @@ label {
 
 .cs_site_header_style1 .cs_nav .cs_nav_list>li.current-menu-item>a:before {
     bottom: -4px;
-    background-color: #fff;
+    background-color: var(--common-color-white);
 }
 
 .cs_side_header {
@@ -3627,7 +3625,7 @@ label {
     height: 100vh;
     background-color: #000;
     flex: none;
-    color: #fff;
+    color: var(--common-color-white);
     margin-left: auto;
     overflow: auto;
     padding: 90px 50px 50px 50px;
@@ -3652,7 +3650,7 @@ label {
 }
 
 .cs_side_header .cs_side_header_in .cs_box_two .cs_phone_number {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_side_header .cs_side_header_in .cs_box_two .cs_social_link {
@@ -3704,7 +3702,7 @@ label {
     border-radius: 50%;
     border: 2px solid currentColor;
     background-color: transparent;
-    color: #fff;
+    color: var(--common-color-white);
     cursor: pointer;
     z-index: 2;
     z-index: 100;
@@ -3729,7 +3727,7 @@ label {
 }
 
 .cs_close:hover {
-    color: #ff6b00;
+    color: var(--accent-color);
     transform: scale(1.05);
 }
 
@@ -3760,7 +3758,7 @@ label {
     top: -110px;
     opacity: 0;
     transition: all 0.4s ease;
-    background-color: #fff;
+    background-color: var(--common-color-white);
 }
 
 .cs_gescout_show {
@@ -3781,7 +3779,7 @@ label {
     display: inline-block;
     height: 8px;
     width: 8px;
-    border: 2px solid #454545;
+    border: 2px solid #454545; /* TODO */
     transform: rotate(45deg);
     border-left: 0;
     border-top: 0;
@@ -3812,7 +3810,7 @@ label {
 
 @media screen and (min-width: 1200px) {
     .cs_nav_list.cs_color_1 {
-        color: #fff;
+        color: var(--common-color-white);
     }
 
     .cs_nav_list.cs_color_1 ul {
@@ -3925,7 +3923,7 @@ label {
         display: inline-block;
         height: 8px;
         width: 8px;
-        border: 2px solid #fff;
+        border: 2px solid var(--common-color-white);
         transform: rotate(45deg);
         border-left: 0;
         border-top: 0;
@@ -3944,7 +3942,7 @@ label {
         background-color: var(--drak-color);
         position: absolute;
         box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
-        border-top: 2px solid #ff6b00;
+        border-top: 2px solid var(--accent-color);
         padding: 5px 0px;
         z-index: 100;
         opacity: 0;
@@ -4042,7 +4040,7 @@ label {
         transform: translate(-50%, -50%);
         height: 2px;
         width: 35px;
-        background-color: #fff;
+        background-color: var(--common-color-white);
         transition: all 0.3s ease;
     }
 
@@ -4351,7 +4349,7 @@ label {
 ----------------------------------------------------------------*/
 
 .cs_footer {
-    color: #c1c1c1;
+    color: var(--body-color);
 }
 
 .cs_footer_in {
@@ -4360,7 +4358,7 @@ label {
 
 .cs_copyright {
     font-size: 18px;
-    border-top: 1px solid #454545;
+    border-top: 1px solid #454545; /* TODO */
     padding: 35px 0;
 }
 
@@ -4374,7 +4372,7 @@ label {
     font-size: 16px;
     text-transform: uppercase;
     line-height: 1.6em;
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_footer_nav>li {
@@ -4385,11 +4383,10 @@ label {
     display: grid;
     grid-gap: 15px 30px;
     grid-template-columns: repeat(3, 1fr);
-    color: #fff;
 }
 
 .cs_footer_social a {
-    border: 1px solid #454545;
+    border: 1px solid var(--btn-tertiary-color);
     padding: 10px 15px;
     min-height: 70px;
 }
@@ -4414,7 +4411,6 @@ label {
 }
 
 .cs_footer_contact_list li i {
-    color: #fff;
     position: absolute;
     left: 0;
     top: 8px;
@@ -4433,7 +4429,6 @@ label {
     font-size: clamp(1.75rem, 4vw, 2.3rem);
     display: inline-block;
     max-width: 100%;
-    color: #fff;
     font-weight: 900;
     line-height: 1.2em;
     overflow-wrap: anywhere;
@@ -4597,7 +4592,7 @@ label {
 }
 
 .cs_isotop_filter.cs_style1 .active a {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_isotop_filter.cs_style1 .active a::before {
@@ -4729,9 +4724,9 @@ label {
 }
 
 .tag-cloud-link:hover {
-    color: #fff;
-    background-color: #ff6b00;
-    border-color: #ff6b00;
+    color: var(--common-color-white);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .widget_archive ul,
@@ -4820,7 +4815,7 @@ label {
 }
 
 .cs_sidebar_search input:focus {
-    border-color: #ff6b00;
+    border-color: var(--accent-color);
 }
 
 .cs_sidebar_search_btn {
@@ -4836,7 +4831,7 @@ label {
 }
 
 .cs_sidebar_search_btn:hover {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_author_card img {
@@ -4981,11 +4976,11 @@ label {
     padding-left: 15px;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_hero.cs_style2 .cs_hero_text .cs_hero_title.cs_hero_title_lg {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_hero.cs_style2 .cs_hero_title.cs_hero_title_lg {
@@ -5007,7 +5002,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--common-color-white);
     font-size: 16px;
     transform: rotate(-90deg);
 }
@@ -5028,7 +5023,7 @@ label {
     display: flex;
     transform: rotate(-90deg);
     gap: 30px;
-    color: #fff;
+    color: var(--common-color-white);
     font-size: 16px;
 }
 
@@ -5039,11 +5034,11 @@ label {
 
 .cs_hero.cs_style2 .cs_right_text .t1 {
     --color-1: #fff;
-    --color-2: #ff6b00;
+    --color-2: var(--accent-color);
 }
 
 .cs_hero.cs_style2 .cs_right_text .t2 {
-    --color-1: #ff6b00;
+    --color-1: var(--accent-color);
     --color-2: #fff;
 }
 
@@ -5229,10 +5224,10 @@ label {
 ----------------------------------------------------------------*/
 
 .btn {
-    padding: 15px;
+    padding: 16px 32px;
     margin-left: 0;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 24px;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
     margin: 1rem;
     border: 0;
@@ -5289,13 +5284,18 @@ label {
 }
 
 
+a:hover{
+    color: var(--accent-color);
+}
+
+.btn svg{
+margin-left: 8px;
+}
 
 
-
-
-
-
-
+.h3_contact{
+    margin-bottom: 32px;
+}
 
 
 
@@ -5375,7 +5375,7 @@ label {
     }
 
     .cs_hero.cs_style2 .cs_hero_text {
-        color: #fff;
+        color: var(--common-color-white);
     }
 
     .cs_hero.cs_style2 .cs_hero_text .cs_hero_subtitle {
@@ -5707,9 +5707,9 @@ label {
 }
 
 .cs_iconbox_3_list .cs_hover_tab.active .cs_iconbox_icon {
-    color: #fff;
-    background-color: #ff6b00;
-    border-color: #ff6b00;
+    color: var(--common-color-white);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .cs_iconbox.cs_style3 {
@@ -5738,9 +5738,9 @@ label {
 }
 
 .cs_iconbox.cs_style3 .cs_iconbox_icon:hover {
-    color: #fff;
-    background-color: #ff6b00;
-    border-color: #ff6b00;
+    color: var(--common-color-white);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .cs_iconbox.cs_style3 .cs_iconbox_title {
@@ -5753,9 +5753,9 @@ label {
 }
 
 .cs_iconbox.cs_style3:hover .cs_iconbox_icon {
-    color: #fff;
-    background-color: #ff6b00;
-    border-color: #ff6b00;
+    color: var(--common-color-white);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 @keyframes inactiveImageAnimation1 {
@@ -5933,7 +5933,7 @@ label {
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_title {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_subtitle {
@@ -5945,7 +5945,7 @@ label {
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_link_wrap {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_link_wrap_services {
@@ -6040,7 +6040,7 @@ label {
 
 .cs_blog.cs_style_1:hover .cs_blog_title {
     transition: all 0.5s;
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 @media screen and (max-width: 991px) {
@@ -6122,7 +6122,7 @@ label {
 }
 
 .cs_post.cs_style_2 .cs_post_info .cs_post_title {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_post.cs_style_2 .cs_post_info p {
@@ -6248,7 +6248,7 @@ label {
 .cs_team_section .cs_team_img .cs_team_text {
     z-index: 200;
     position: absolute;
-    color: #fff;
+    color: var(--common-color-white);
     transform: rotate(-90deg);
     transform-origin: left;
     bottom: 30px;
@@ -6257,12 +6257,12 @@ label {
 }
 
 .cs_team_section .cs_team_img .cs_team_text .cs_team_text_title {
-    color: #fff;
+    color: var(--common-color-white);
     margin-bottom: 5px;
 }
 
 .cs_team_section .cs_team_img .cs_team_text .cs_team_subtitle {
-    color: #fff;
+    color: var(--common-color-white);
     margin: 0;
     font-size: 16px;
     line-height: 160%;
@@ -6285,7 +6285,7 @@ label {
 .cs_team_section .cs_team_img:hover>.cs_team_text .cs_team_text_title {
     transition: all 0.7s;
     transition-delay: 0.7s;
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_team_section .cs_team_img .cs_portfolio_overlay {
@@ -6312,7 +6312,6 @@ label {
 
 .cs_team_details .cs_funfact.cs_style1 .cs_stroke_text {
     font-size: 60px;
-    font-family: "Inter Tight";
 }
 
 .cs_team_details.cs_funfact {
@@ -6403,11 +6402,11 @@ label {
     align-items: center;
     text-align: center;
     text-transform: capitalize;
-    padding: 150px 250px;
+    padding: 100px 200px; /* TODO: esto es el padding del bloque "contactar" */
 }
 
 .cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_text .cs_section_title_3.cs_color_2 {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_right {
@@ -6419,7 +6418,7 @@ label {
 }
 
 .cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_right .cs_btn.cs_style_1.cs_color_2 {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 @media screen and (max-width: 1300px) {
@@ -6547,7 +6546,7 @@ label {
 
 .cs_testimonial.cs_style_1.cs_color_1 .cs_testimonial_title,
 .cs_testimonial.cs_style_1.cs_color_1 .cs_testimonial_avatar_name {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_testimonial.cs_style_1.cs_color_2 {
@@ -6630,11 +6629,11 @@ label {
 }
 
 .cs_creative_protfolio_details .cs_project_card .cs_project_card_text :hover {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_creative_protfolio_details .cs_project_card .cs_project_card_text .cs_subtitle {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 
@@ -6653,15 +6652,15 @@ label {
 }
 
 .cs_creative_protfolio_menu ul li:nth-child(1) {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_creative_protfolio_menu ul li:active {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_creative_protfolio_menu ul li:hover {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 
@@ -6680,15 +6679,15 @@ label {
 }
 
 .cs_isotop_item_menu ul li:nth-child(1) {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_isotop_item_menu ul li:active {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_isotop_item_menu ul li:hover {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_isotop_items_details .cs_item {
@@ -6709,11 +6708,11 @@ label {
 }
 
 .cs_isotop_items_details .cs_item .cs_item_hover .cs_item_text h6 {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_isotop_items_details .cs_item .cs_item_hover .cs_item_text p {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_isotop_items_details .cs_item .cs_item_hover:hover .cs_item_text {
@@ -6792,12 +6791,12 @@ label {
 
 .cs_portfolio.cs_style_1 .cs_portfolio_title {
     font-size: 22px;
-    color: #fff;
+    color: var(--common-color-white);
     margin-bottom: 8px;
 }
 
 .cs_portfolio.cs_style_1 .cs_portfolio_title:hover {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_portfolio.cs_style_1 .cs_portfolio_subtitle {
@@ -6841,7 +6840,7 @@ label {
 
 .cs_portfolio.cs_style_2 .cs_portfolio_info .cs_text.cs_style_1 {
     margin: 25px;
-    background-color: #fff;
+    background-color: var(--common-color-white);
     padding: 30px 1px 30px 30px;
 }
 
@@ -6862,7 +6861,7 @@ label {
 }
 
 .cs_portfolio.cs_style_2 .cs_portfolio_title:hover {
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_portfolio.cs_style_2 .cs_portfolio_subtitle {
@@ -7119,7 +7118,7 @@ label {
     top: -55px;
     height: 135px;
     width: 135px;
-    background: #ff6b00;
+    background: var(--accent-color);
     filter: blur(125px);
     transition: all 0.4s ease;
     opacity: 0;
@@ -7235,7 +7234,6 @@ label {
 }
 
 .cs_our_agency_Par_color {
-    font-family: "Kanit";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -7253,7 +7251,7 @@ label {
 
 .cs_team_images {
     position: relative;
-    color: #fff;
+    color: var(--common-color-white);
     transition: transform 0.5s ease-in-out;
 }
 
@@ -7267,7 +7265,7 @@ label {
 
 .cs_team_images_text h6 {
     margin: 0px;
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_team_images img {
@@ -7337,7 +7335,7 @@ label {
 }
 
 .cs_modern_needs.cs_style .cs_col_md_672 .cs_img_section .cs_img_card_text .cs_color_style {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_journey_stary {
@@ -7441,7 +7439,7 @@ label {
     border: 1px solid #c1c1c1;
     background-color: transparent;
     outline: none;
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_newsletter.cs_style_1 .cs_newsletter_input:focus {
@@ -7488,6 +7486,7 @@ label {
     width: 308px;
     padding: 50px;
     box-shadow: 0px 0px 16px 16px rgba(112, 144, 176, 0.05);
+    background-color: var(--gray-00);
     margin-bottom: 60px;
     align-items: start;
 }
@@ -7502,7 +7501,7 @@ label {
     width: 30px;
     height: 1px;
     margin-right: 15px;
-    background-color: #ff6b00;
+    background-color: var(--accent-color);
 }
 
 @media screen and (max-width: 991px) {
@@ -7546,7 +7545,7 @@ label {
 }
 
 .cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1:hover>.cs_card_link_wrap .cs_card_link {
-    color: #ff6b00;
+    color: var(--accent-color);
     transform: rotate(0deg);
 }
 
@@ -7740,7 +7739,7 @@ label {
 .cs_work.cs_work_1 .cs_card_work.cs_style_1 .cs_card.cs_style_1 .cs_work_style_1 {
     width: 15px;
     height: 15px;
-    background: #ff6b00;
+    background: var(--accent-color);
     border-radius: 50%;
 }
 
@@ -7748,7 +7747,7 @@ label {
     width: 30px;
     height: 1px;
     transform: rotate(90deg);
-    background: #ff6b00;
+    background: var(--accent-color);
     margin-left: -7px;
 }
 
@@ -7757,7 +7756,7 @@ label {
 }
 
 .cs_work.cs_work_1 .cs_card_work.cs_style_1.cs_color_1 .cs_work_title {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_work.cs_work_1 .cs_card_work.cs_style_1.cs_color_1 .cs_work_subtitle {
@@ -7779,7 +7778,7 @@ label {
 
 .cs_blog.cs_style_1:hover .cs_blog_title {
     transition: all 0.5s;
-    color: #ff6b00;
+    color: var(--accent-color);
 }
 
 .cs_andrew_jackson {
@@ -7791,9 +7790,6 @@ label {
     line-height: 39px;
 }
 
-.cs_andrew_jackson .cs_footer_text.cs_color_1 {
-    color: #c1c1c1;
-}
 
 @media screen and (max-width: 991px) {
     .cs_andrew_jackson {
@@ -7860,7 +7856,7 @@ label {
 }
 
 .cs_accordeon .cs_accordion_item.cs_color_1 .cs_accordion_header .cs_accordion_title {
-    color: #fff;
+    color: var(--common-color-white);
 }
 
 .cs_accordeon .cs_accordion_item.cs_color_1 .cs_accordion_body {
@@ -7904,7 +7900,7 @@ label {
 }
 
 .cs_icon .cs_icon_style:hover {
-    background-color: #ff6b00;
+    background-color: var(--accent-color);
 }
 
 .cs_icon .cs_icon_text .cs_icon_title {
