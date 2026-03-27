@@ -1695,8 +1695,7 @@ label {
     font-size: 100px;
     font-weight: 900;
     line-height: 1.2em;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--body-color);
+    color: var(--gray-300);
 }
 
 .cs_stroke_text.cs_type_1 {
@@ -7339,9 +7338,6 @@ color: var(--common-color-black);
 }
 
 .cs_modern_needs.cs_style {
-    display: flex;
-    width: 78vw;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -7350,8 +7346,8 @@ color: var(--common-color-black);
     flex-basis: 778px;
 }
 
-.cs_modern_needs.cs_style .cs_col_md_778 .cs_text p {
-    max-width: 610px;
+.cs_modern_needs.cs_style .cs_col_md_778 .half_width {
+    max-width: 630px;
 }
 
 .cs_modern_needs.cs_style .cs_col_md_778 .cs_stroke_text {
@@ -7402,6 +7398,9 @@ color: var(--common-color-black);
     }
 }
 
+.text-section h6{
+    color: var(--gray-500);
+}
 
 /*--------------------------------------------------------------
   25. Story
