@@ -5303,7 +5303,13 @@ margin-left: 8px;
     margin-bottom: 32px;
 }
 
+.row.reenfoque{
+    padding: 32px 0 16px;
+}
 
+.col-md-3.col-12{
+    padding-bottom: 16px;
+}
 
 .btn .cs_hero_btn {
     color: inherit;
