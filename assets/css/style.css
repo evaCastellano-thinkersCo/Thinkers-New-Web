@@ -1009,9 +1009,6 @@ hr {
     background-color: var(--gray-200);
 }
 
-.dark .gray_200 {
-    background: #000000;
-}
 
 .cs_accent_bg_1,
 .cs_accent_bg_1_hover:hover {
@@ -5253,6 +5250,10 @@ label {
     color: var(--btn-primary-color);
 }
 
+.bt_primary:disabled{
+    background-color: red;
+}
+
 /* Secundario */
 .btn_secondary {
     background-color: var(--default-btn-secondary);
@@ -5263,10 +5264,12 @@ label {
 
 .btn_secondary:hover {
     background-color: var(--hover-btn-secondary);
+    color: var(--btn-secondary-color);
 }
 
 .btn_secondary:active {
     background-color: var(--active-btn-secondary);
+    color: var(--btn-secondary-color);
 }
 
 /* Terciario */
