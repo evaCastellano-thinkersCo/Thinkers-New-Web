@@ -60,8 +60,10 @@
     --body-font-family: "Montserrat", sans-serif;
     --heading-font-family: "Montserrat", sans-serif;
     --accent-color: #F79837;
-    --body-color:  #6E7681; /* parrafos */
-    --heading-color: #131416; /* títulos */
+    --body-color: #6E7681;
+    /* parrafos */
+    --heading-color: #131416;
+    /* títulos */
     --primary-color: #6E7681;
     --cr_banner-color: #f4f4f4;
     --border-color: #c1c1c1;
@@ -74,10 +76,10 @@
     --gray-00: #ffffff;
     --gray-100: #F5F7FA;
     --gray-200: #E6EAF0;
-    --gray-300:#C4CBD6;
-    --gray-400:#6E7681;
-    --gray-500:#2A3138;
-    --gray-600:#131416;
+    --gray-300: #C4CBD6;
+    --gray-400: #6E7681;
+    --gray-500: #2A3138;
+    --gray-600: #131416;
 
     /* botones */
     --default-btn-primary: #F79837;
@@ -107,8 +109,10 @@
     --drak-color: #131416;
     --cr_banner-color: #131416;
     --accent-color: #F79837;
-    --body-color: #E6EAF0; /* parrafos */
-    --heading-color: #F5F7FA; /* títulos */
+    --body-color: #E6EAF0;
+    /* parrafos */
+    --heading-color: #F5F7FA;
+    /* títulos */
     --primary-color: #ffffff;
     --common-color-white: #F5F7FA;
     --common-color-black: #131416;
@@ -119,7 +123,7 @@
 2. Typography
 ----------------------------------------------------------------*/
 
-*{
+* {
     font-family: var(--body-font-family);
 }
 
@@ -997,7 +1001,7 @@ hr {
     background-color: #181818;
 }
 
-.gray_00{
+.gray_00 {
     background-color: var(--gray-00);
 }
 
@@ -3779,7 +3783,8 @@ label {
     display: inline-block;
     height: 8px;
     width: 8px;
-    border: 2px solid #454545; /* TODO */
+    border: 2px solid #454545;
+    /* TODO */
     transform: rotate(45deg);
     border-left: 0;
     border-top: 0;
@@ -4358,7 +4363,8 @@ label {
 
 .cs_copyright {
     font-size: 18px;
-    border-top: 1px solid #454545; /* TODO */
+    border-top: 1px solid #454545;
+    /* TODO */
     padding: 35px 0;
 }
 
@@ -5249,7 +5255,7 @@ label {
     color: var(--btn-primary-color);
 }
 
-.bt_primary:disabled{
+.bt_primary:disabled {
     background-color: red;
 }
 
@@ -5292,24 +5298,24 @@ label {
 }
 
 
-a:hover{
+a:hover {
     color: var(--accent-color);
 }
 
-.btn svg{
-margin-left: 8px;
+.btn svg {
+    margin-left: 8px;
 }
 
 
-.h3_contact{
+.h3_contact {
     margin-bottom: 32px;
 }
 
-.row.reenfoque{
+.row.reenfoque {
     padding: 32px 0 16px;
 }
 
-.col-md-3.col-12{
+.col-md-3.col-12 {
     padding-bottom: 16px;
 }
 
@@ -5883,7 +5889,7 @@ margin-left: 8px;
     background-attachment: scroll;
 }
 
-.card_link:hover{
+.card_link:hover {
     color: inherit;
 }
 
@@ -6097,17 +6103,16 @@ margin-left: 8px;
   15. Posts
 ----------------------------------------------------------------*/
 
-.cs_post{
-    background-color: var(--common-color-white);
+.cs_post {
     padding: 16px;
 }
 
-.cs_post:hover{
-    background-color: var(--gray-200);
+.cs_post:hover {
+    background-color: var(--gray-100);
     cursor: pointer;
 }
 
-.cs_post:active{
+.cs_post:active {
     background-color: var(--gray-300);
 }
 
@@ -6187,7 +6192,7 @@ color: var(--common-color-black);
 }
 
 .cs_post.cs_style_1 .cs_post_info p {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .cs_post.cs_style_2 .cs_post_info .cs_section_heading_right {
@@ -6465,7 +6470,8 @@ color: var(--common-color-black);
     align-items: center;
     text-align: center;
     text-transform: capitalize;
-    padding: 100px 200px; /* TODO: esto es el padding del bloque "contactar" */
+    padding: 100px 200px;
+    /* TODO: esto es el padding del bloque "contactar" */
 }
 
 .cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_text .cs_section_title_3.cs_color_2 {
@@ -7417,7 +7423,7 @@ color: var(--common-color-black);
     }
 }
 
-.text-section h6{
+.text-section h6 {
     color: var(--gray-500);
 }
 
@@ -7599,11 +7605,11 @@ color: var(--common-color-black);
 /*--------------------------------------------------------------
   28. Services
 ----------------------------------------------------------------*/
-.card_link:hover{
+.card_link:hover {
     background-color: rgba(42, 49, 56, 0.30);
 }
 
-.card_link{
+.card_link {
     padding: 16px;
 }
 
