@@ -5867,6 +5867,7 @@ margin-left: 8px;
 }
 
 .cs_card.cs_style_1 .cs_card_number {
+    background-color: var(--gray-300);
     font-size: 120px;
     font-weight: 900;
     line-height: 1em;
@@ -5878,7 +5879,10 @@ margin-left: 8px;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-attachment: scroll;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.card_link:hover{
+    color: inherit;
 }
 
 .cs_card.cs_style_1 .cs_card_left {
