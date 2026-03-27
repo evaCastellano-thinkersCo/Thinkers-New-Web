@@ -104,14 +104,14 @@
 }
 
 .dark {
-    --drak-color: #181818;
-    --cr_banner-color: #181818;
+    --drak-color: #131416;
+    --cr_banner-color: #131416;
     --accent-color: #F79837;
     --body-color: #E6EAF0; /* parrafos */
     --heading-color: #F5F7FA; /* títulos */
     --primary-color: #ffffff;
     --common-color-white: #F5F7FA;
-    --common-color-black: #131416;
+    --common-color-black: ##131416;
 }
 
 
@@ -7590,6 +7590,9 @@ color: var(--common-color-black);
 /*--------------------------------------------------------------
   28. Services
 ----------------------------------------------------------------*/
+.card_link:hover{
+    background-color: rgba(42, 49, 56, 0.25);
+}
 
 .cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1 .cs_card_right {
     padding: 0;
