@@ -111,7 +111,7 @@
     --heading-color: #F5F7FA; /* títulos */
     --primary-color: #ffffff;
     --common-color-white: #F5F7FA;
-    --common-color-black: ##131416;
+    --common-color-black: #131416;
 }
 
 
@@ -5281,11 +5281,13 @@ label {
 
 .btn_tertiary:hover {
     background-color: var(--hover-btn-tertiary);
+    color: var(--btn-tertiary-color);
     border: 0;
 }
 
 .btn_tertiary:active {
     background-color: var(--active-btn-tertiary);
+    color: var(--btn-tertiary-color);
     border: 0;
 }
 
@@ -6169,7 +6171,7 @@ color: var(--common-color-black);
 }
 
 .cs_post.cs_style_2 .cs_post_info {
-    background-color: #000;
+    background-color: var(--common-color-black);
     padding-left: 50px;
     padding-top: 60px;
     padding-right: 52px;
@@ -6180,8 +6182,12 @@ color: var(--common-color-black);
 }
 
 .cs_post.cs_style_2 .cs_post_info p {
-    color: #c1c1c1;
+    color: var(--primary-color);
     font-size: 16px;
+}
+
+.cs_post.cs_style_1 .cs_post_info p {
+  font-size: 16px;
 }
 
 .cs_post.cs_style_2 .cs_post_info .cs_section_heading_right {
@@ -6189,6 +6195,9 @@ color: var(--common-color-black);
     padding-bottom: 60px;
 }
 
+.cs_post.cs_style_1 {
+    height: 100%;
+}
 
 /*--------------------------------------------------------------
   16. Team
