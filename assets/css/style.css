@@ -5297,6 +5297,9 @@ label {
     border: 0;
 }
 
+.btn_tertiary{
+    margin: 0;
+}
 
 a:hover {
     color: var(--accent-color);
@@ -6469,9 +6472,7 @@ color: var(--common-color-black);
     flex-direction: column;
     align-items: center;
     text-align: center;
-    text-transform: capitalize;
     padding: 100px 200px;
-    /* TODO: esto es el padding del bloque "contactar" */
 }
 
 .cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_text .cs_section_title_3.cs_color_2 {
