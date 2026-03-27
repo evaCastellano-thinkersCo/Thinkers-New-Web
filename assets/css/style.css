@@ -7606,12 +7606,17 @@ color: var(--common-color-black);
 /*--------------------------------------------------------------
   28. Services
 ----------------------------------------------------------------*/
-.card_link:hover {
+.dark .card_link:hover {
     background-color: rgba(42, 49, 56, 0.30);
 }
 
 .card_link {
     padding: 16px;
+}
+
+.card_link:hover {
+    background-color: var(--gray-100
+    );
 }
 
 .cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1 .cs_card_right {
