@@ -7529,7 +7529,7 @@ color: var(--common-color-black);
 
 .cs_startup_agency.cs_card {
     width: 308px;
-    padding: 50px;
+    padding: 40px;
     box-shadow: 0px 0px 16px 16px rgba(112, 144, 176, 0.05);
     background-color: var(--gray-00);
     margin-bottom: 60px;
@@ -7547,6 +7547,17 @@ color: var(--common-color-black);
     height: 1px;
     margin-right: 15px;
     background-color: var(--accent-color);
+}
+
+.cs_help_cards .cs_startup_agency.cs_card {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.cs_help_cards .cs_startup_agency {
+    align-items: stretch;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 991px) {
