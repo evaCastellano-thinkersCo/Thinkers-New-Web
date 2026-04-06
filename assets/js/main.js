@@ -595,7 +595,7 @@
         duration: 0.5,
         x: 100,
         autoAlpha: 0,
-        stagger: 0.1,
+        stagger: 0.05, /* FIXME: Velocidad texto h2 thinkers-lab,drive,capacity */
       },
       "-=1"
     );

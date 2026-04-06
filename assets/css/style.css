@@ -123,6 +123,9 @@
 2. Typography
 ----------------------------------------------------------------*/
 
+/* TODO:
+- colores de fondox
+ */
 * {
     font-family: var(--body-font-family);
     /* background-color: var(--common-color-white); */
