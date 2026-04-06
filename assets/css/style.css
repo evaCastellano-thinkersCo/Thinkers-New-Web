@@ -125,7 +125,12 @@
 
 * {
     font-family: var(--body-font-family);
+    /* background-color: var(--common-color-white); */
 }
+/* 
+.dark *{
+    background-color: var(--common-color-black);
+} */
 
 html,
 body,
@@ -190,6 +195,10 @@ ul {
     margin: 0 0 25px 0;
     padding-left: 20px;
     list-style: square outside none;
+}
+
+.sub_lista {
+    list-style: circle;
 }
 
 ul.cs_list_style_none {
@@ -825,6 +834,7 @@ textarea {
 
 .cs_black {
     font-weight: 900;
+    font-size: 2rem;
 }
 
 .cs_radius_3 {
@@ -1688,7 +1698,7 @@ label {
 
 .cs_partner_logo {
     flex: none;
-    padding: 10px 65px;
+    padding: 10px 40px;
 }
 
 .cs_partner_logo img {
@@ -1719,9 +1729,7 @@ label {
 .cs_stroke_number {
     font-size: 100px;
     font-weight: 900;
-    line-height: 1.2em;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--body-color);
+    color: var(--gray-300);
 }
 
 .cs_stroke_number.cs_type_1 {
@@ -2297,6 +2305,20 @@ label {
     width: 50vw;
 }
 
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.checkbox input{
+    width: 60px;
+    height: 30px;
+    margin: 5px 10px 0 0;
+    background-color: var(--accent-color);
+    accent-color: var(--accent-color);
+}
+
 .cs_list.cs_style1 li:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -2533,8 +2555,8 @@ label {
 }
 
 .cs_field_group .cs_input_field:focus {
-    -o-border-image: linear-gradient(to right, #b42f2f, #141414);
-    border-image: linear-gradient(to right, #b42f2f, #141414);
+    -o-border-image: linear-gradient(to right, var(--accent-color), var(--common-color-black));
+    border-image: linear-gradient(to right, var(--accent-color), var(--common-color-black));
     border-image-slice: 1;
 }
 
@@ -3662,6 +3684,7 @@ label {
     list-style: none;
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .cs_side_header .cs_side_header_heading {
@@ -3783,8 +3806,7 @@ label {
     display: inline-block;
     height: 8px;
     width: 8px;
-    border: 2px solid #454545;
-    /* TODO */
+    border: 2px solid var(--gray-400);
     transform: rotate(45deg);
     border-left: 0;
     border-top: 0;
@@ -4341,7 +4363,7 @@ label {
 }
 
 .dark .cs_gescout_show .cs_main_header {
-    background-color: #000;
+    background-color: var(--common-color-black);
 }
 
 .dark .cs_site_header.cs_style1 .cs_icon_btn {
@@ -4364,7 +4386,6 @@ label {
 .cs_copyright {
     font-size: 18px;
     border-top: 1px solid #454545;
-    /* TODO */
     padding: 35px 0;
 }
 
@@ -5297,7 +5318,7 @@ label {
     border: 0;
 }
 
-.btn_tertiary{
+.btn_tertiary {
     margin: 0;
 }
 
@@ -6108,11 +6129,17 @@ a:hover {
 
 .cs_post {
     padding: 16px;
+    /* border: 1px solid var(--gray-200); */
 }
+
+/* FIXME: propuesta bordes de las tarjetas casos y blog:
+            el border de .cs_post y .cs_post:hover
+*/
 
 .cs_post:hover {
     background-color: var(--gray-100);
     cursor: pointer;
+   /*  border: 1px solid transparent; */
 }
 
 .cs_post:active {
@@ -6149,10 +6176,13 @@ color: var(--common-color-black);
     display: flex;
     gap: 30px;
     align-items: stretch;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .cs_featured_case_item {
-    flex: 1 1 0;
+    /* flex: 1 1 0; */
     min-width: 0;
 }
 
@@ -6160,6 +6190,14 @@ color: var(--common-color-black);
     display: block;
     height: 100%;
     color: inherit;
+}
+
+.cs_featured_case_link {
+    width: 400px;
+}
+
+.casos-html .cs_featured_case_link {
+    width: 300px;
 }
 
 .cs_featured_case_item .cs_post_thumb {
@@ -7082,6 +7120,8 @@ color: var(--common-color-black);
 @media screen and (max-width: 767px) {
     .cs_featured_cases_grid {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .project_successfull {
@@ -7615,8 +7655,7 @@ color: var(--common-color-black);
 }
 
 .card_link:hover {
-    background-color: var(--gray-100
-    );
+    background-color: var(--gray-100);
 }
 
 .cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1 .cs_card_right {
@@ -7972,7 +8011,7 @@ color: var(--common-color-black);
 }
 
 .cs_contact_ms .cs_contact .cs_contact_title {
-    font-size: 100px;
+    font-size: 3rem;
     font-weight: 900;
 }
 
@@ -7984,12 +8023,11 @@ color: var(--common-color-black);
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    cursor: pointer;
 }
 
-.cs_icon .cs_icon_style:hover {
+/* .cs_icon .cs_icon_style:hover {
     background-color: var(--accent-color);
-}
+} */
 
 .cs_icon .cs_icon_text .cs_icon_title {
     margin: 0;

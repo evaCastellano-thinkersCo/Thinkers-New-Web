@@ -657,6 +657,7 @@ textarea {
 
 .cs_black {
   font-weight: 900;
+  font-size: clamp(0.875rem, 0.82rem + 0.28vw, 1rem);
 }
 
 .cs_radius_3 {
