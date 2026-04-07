@@ -2563,8 +2563,7 @@ label {
 }
 
 .cs_field_group .cs_input_field:focus {
-    -o-border-image: linear-gradient(to right, var(--accent-color), var(--common-color-black));
-    border-image: linear-gradient(to right, var(--accent-color), var(--common-color-black));
+    border-color: var(--accent-color);
     border-image-slice: 1;
 }
 
@@ -5383,6 +5382,7 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+/* fin botones */
 
 .h3_contact {
     margin-bottom: 32px;
@@ -8063,6 +8063,7 @@ color: var(--common-color-black);
     display: flex;
     width: 85vw;
     gap: 9%;
+    justify-content: space-between;
 }
 
 .cs_contact_ms .cs_contact_section_2 {
@@ -8086,6 +8087,10 @@ color: var(--common-color-black);
     height: 40px;
     width: 40px;
     border-radius: 50%;
+}
+
+.small_text{
+    font-size: 13px;
 }
 
 /* .cs_icon .cs_icon_style:hover {
