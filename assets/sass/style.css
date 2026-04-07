@@ -5144,6 +5144,15 @@ label {
     flex-direction: column;
     align-items: start;
   }
+  .cs_card.cs_style_1 .cs_card_right {
+    width: 100%;
+    padding: 35px 0 80px;
+  }
+  .cs_card.cs_style_1 .cs_card_link_wrap {
+    top: auto;
+    bottom: 25px;
+    transform: none;
+  }
   .cs_card.cs_style_2 {
     flex-direction: column;
   }

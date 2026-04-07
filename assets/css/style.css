@@ -130,6 +130,7 @@
     font-family: var(--body-font-family);
     /* background-color: var(--common-color-white); */
 }
+
 /* 
 .dark *{
     background-color: var(--common-color-black);
@@ -164,6 +165,11 @@ h6 {
 
 .cs_primary_font {
     font-family: var(--body-font-family);
+}
+
+.cs_primary_font span {
+    font-size: 90%;
+    white-space: nowrap;
 }
 
 /*.cs_secondary_font {
@@ -2314,7 +2320,7 @@ label {
     align-items: flex-start;
 }
 
-.checkbox input{
+.checkbox input {
     width: 60px;
     height: 30px;
     margin: 5px 10px 0 0;
@@ -4413,6 +4419,14 @@ label {
     display: grid;
     grid-gap: 15px 30px;
     grid-template-columns: repeat(3, 1fr);
+
+    /* 
+    FIXME: version logos con svg 
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0;
+     */
 }
 
 .cs_footer_social a {
@@ -4423,6 +4437,7 @@ label {
 
 .cs_footer_social a:hover {
     border-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .cs_footer_contact_list {
@@ -6100,6 +6115,17 @@ a:hover {
         align-items: start;
     }
 
+    .cs_card.cs_style_1 .cs_card_right {
+        width: 100%;
+        padding: 0 0 80px;
+    }
+
+    .cs_card.cs_style_1 .cs_card_link_wrap {
+        top: auto;
+        bottom: 50px;
+        transform: none;
+    }
+
     .cs_card.cs_style_2 {
         flex-direction: column;
     }
@@ -6142,7 +6168,7 @@ a:hover {
 .cs_post:hover {
     background-color: var(--gray-100);
     cursor: pointer;
-   /*  border: 1px solid transparent; */
+    /*  border: 1px solid transparent; */
 }
 
 .cs_post:active {
