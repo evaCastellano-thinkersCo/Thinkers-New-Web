@@ -61,9 +61,7 @@
     --heading-font-family: "Montserrat", sans-serif;
     --accent-color: #F79837;
     --body-color: #6E7681;
-    /* parrafos */
     --heading-color: #131416;
-    /* títulos */
     --primary-color: #6E7681;
     --cr_banner-color: #f4f4f4;
     --border-color: #c1c1c1;
@@ -3152,12 +3150,21 @@ label {
 }
 
 .cs_swiper_navigation_wrap>* {
-    color: --primary-color;
+    color: var(--primary-color);
     transition: all 0.4s ease;
 }
 
 .cs_swiper_navigation_wrap>*:hover {
     color: var(--accent-color);
+}
+
+.cs_swiper_navigation_wrap svg{
+    stroke: var(--primary-color);
+}
+
+.cs_swiper_navigation_wrap svg:hover{
+    stroke: var(--accent-color);
+    transition: 0.3s ease;
 }
 
 @media screen and (max-width: 991px) {
@@ -5259,11 +5266,6 @@ label {
 
 /* end hero 5 */
 
-.cs_swiper_button_prev svg {
-    transform: rotate(180deg);
-}
-
-
 /*--------------------------------------------------------------
   - Botones
 ----------------------------------------------------------------*/
@@ -5340,6 +5342,10 @@ label {
     margin: 0;
 }
 
+.btn_tertiary svg path{
+    stroke: var(--btn-tertiary-color);
+}
+
 a:hover {
     color: var(--accent-color);
 }
@@ -5395,7 +5401,6 @@ a:hover {
 .swiper-slide .cs_hero.cs_style1 .cs_hero_btn_wrap {
     position: relative;
     display: inline-block;
-    transform: rotate(-20deg);
     opacity: 0;
     top: -30px;
     transition: all 0.65s ease-in-out;
