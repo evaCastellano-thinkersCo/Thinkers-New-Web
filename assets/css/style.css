@@ -5309,6 +5309,7 @@ label {
     color: var(--btn-primary-color);
 }
 
+
 .btn_primary:active {
     background-color: var(--active-btn-primary);
     color: var(--btn-primary-color);
@@ -5370,6 +5371,11 @@ a:hover {
 
 .btn svg {
     margin-left: 8px;
+}
+
+.btn:hover svg {
+    margin-left: 16px;
+    transition: all 0.3s ease;
 }
 
 
