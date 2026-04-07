@@ -3646,7 +3646,7 @@ label {
     text-decoration-color: var(--accent-color);
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
-    color: var(--gray-600);
+    color: var(--gray-500);
 }
 
 .active:hover{
