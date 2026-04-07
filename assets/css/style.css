@@ -3640,6 +3640,24 @@ label {
     background-color: var(--common-color-white);
 }
 
+/* TODO: asasa */
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+.active:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    transition: all 0.3s ease;
+} 
+
 .cs_side_header {
     position: fixed;
     top: 0;
