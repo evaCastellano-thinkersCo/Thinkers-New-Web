@@ -3646,11 +3646,12 @@ label {
     text-decoration-color: var(--accent-color);
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
+    color: var(--gray-600);
 }
 
 .active:hover{
     text-decoration: underline;
-    text-decoration-color: var(--body-color);
+    text-decoration-color: var(--accent-color);
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
     transition: all 0.3s ease;
