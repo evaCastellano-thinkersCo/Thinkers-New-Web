@@ -299,21 +299,52 @@
          7. Modal Video
  --------------------------------------------------------------*/
   function modalVideo() {
+    var popup = document.querySelector(".cs_video_popup");
+    var content = popup?.querySelector(".cs_video_popup_content");
+    var container = popup?.querySelector(".cs_video_popup_container");
+    var iframe = popup?.querySelector("iframe");
+
+    function closePopup() {
+      if (!popup || !iframe) {
+        return;
+      }
+
+      popup.classList.remove("active");
+      $("html").removeClass("overflow-hidden");
+      iframe.src = "about:blank";
+    }
+
     $(document).on("click", ".cs_video_open", function (e) {
       e.preventDefault();
       var video = $(this).attr("href");
-      video = video.split("?v=")[1].trim();
-      $(".cs_video_popup_container iframe").attr(
-        "src",
-        `https://www.youtube.com/embed/${video}`
-      );
+      var embedUrl = video;
+
+      if (video.indexOf("youtube.com/watch") !== -1) {
+        video = video.split("?v=")[1].trim();
+        embedUrl = `https://www.youtube.com/embed/${video}`;
+      } else if (video.indexOf("youtu.be/") !== -1) {
+        video = video.split("youtu.be/")[1].split("?")[0].trim();
+        embedUrl = `https://www.youtube.com/embed/${video}`;
+      } else if (video.indexOf("player.vimeo.com/") !== -1) {
+        embedUrl = video.indexOf("?") === -1 ? `${video}?autoplay=1` : `${video}&autoplay=1`;
+      } else if (video.indexOf("vimeo.com/") !== -1) {
+        video = video.split("vimeo.com/")[1].split("?")[0].trim();
+        embedUrl = `https://player.vimeo.com/video/${video}?autoplay=1`;
+      }
+
+      $(".cs_video_popup_container iframe").attr("src", embedUrl);
       $(".cs_video_popup").addClass("active");
     });
-    $(".cs_video_popup_close, .cs_video_popup_layer").on("click", function (e) {
-      $(".cs_video_popup").removeClass("active");
-      $("html").removeClass("overflow-hidden");
-      $(".cs_video_popup_container iframe").attr("src", "about:blank");
+
+    $(".cs_video_popup_close").on("click", function (e) {
+      closePopup();
       e.preventDefault();
+    });
+
+    content?.addEventListener("click", function (e) {
+      if (!container || !container.contains(e.target)) {
+        closePopup();
+      }
     });
   }
 
