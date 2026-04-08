@@ -6279,7 +6279,7 @@ color: var(--common-color-black);
     para hacer las imagenes panoramicas
     aspect-ratio: 2 / 1;
      */
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 2 / 1;
     overflow: hidden;
 }
 
