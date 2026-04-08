@@ -79,6 +79,9 @@
     --gray-500: #2A3138;
     --gray-600: #131416;
 
+    --gray-200-traslucido:#e6eaf080;
+    --gray-400-traslucido:#6E768180;
+
     /* botones */
     --default-btn-primary: #F79837;
     --hover-btn-primary: #D97A1E;
@@ -1399,11 +1402,6 @@ label {
     z-index: 5;
 }
 
-/* FIXME: borde del vídeo */
-.cs_parallax{
-    border: 1px solid var(--gray-300);
-}
-
 .cs_fullscreen_swiper_wrap {
     position: relative;
     height: 100vh;
@@ -1826,7 +1824,7 @@ label {
     width: 100%;
     left: 0%;
     top: 0%;
-    background-color: #000;
+    background-color: var(--common-color-black);
 }
 
 .cs_video_block.cs_style1 {
@@ -1836,6 +1834,7 @@ label {
     z-index: 10;
     overflow: hidden;
     border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .cs_video_block.cs_style1::before {
@@ -1846,9 +1845,18 @@ label {
     left: 0;
     top: 0;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.4s ease;
 }
+
+.cs_video_block.cs_style1.cs_video_preview_overlay::before {
+      opacity: 1;
+      background-color: var(--gray-200-traslucido);
+    }
+
+    .cs_video_block.cs_style1.cs_video_preview_overlay:hover::before {
+      opacity: 1;
+      background-color: var(--gray-400-traslucido);;
+    }
 
 .cs_video_block.cs_style1:hover::before {
     opacity: 1;
@@ -1887,7 +1895,6 @@ label {
     background: #fff;
     border-radius: 50%;
 }
-
 .cs_player_btn:before {
     z-index: 0;
     animation: pulse-border 1500ms ease-out infinite;
@@ -6734,7 +6741,7 @@ color: var(--common-color-black);
 }
 
 .cs_testimonial.cs_style_1.cs_color_1 {
-    color: #c1c1c1;
+    color: var(--gray-400);
 }
 
 .cs_testimonial.cs_style_1.cs_color_1 .cs_testimonial_title,
