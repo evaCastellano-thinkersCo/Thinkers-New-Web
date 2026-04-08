@@ -3295,7 +3295,7 @@ label {
     position: absolute;
     left: 0;
     right: 0;
-    background: #000;
+    background: var(--common-color-black);
     transition: all 0.4s ease-out;
     opacity: 0;
 }
@@ -3340,7 +3340,7 @@ label {
     display: inline-block;
     position: relative;
     text-align: left;
-    background: #fff;
+    background: var(--common-color-white);
     max-width: 1380px;
     width: 100%;
     vertical-align: middle;
@@ -6275,12 +6275,19 @@ color: var(--common-color-black);
 }
 
 .cs_featured_case_item .cs_post_thumb {
+    /* 
+    para hacer las imagenes panoramicas
+    aspect-ratio: 2 / 1;
+     */
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
 
 .cs_featured_case_item .cs_post_thumb img {
-    /* Tamaño de las imagenes, actualmente cuadradas */
+    /* Tamaño de las imagenes, actualmente cuadradas
+    height 50%;
+    para hacer las imagenes panoramicas
+    */
     width: 100%;
     height: 100%;
 
@@ -7088,6 +7095,18 @@ color: var(--common-color-black);
 
 .cs_portfolio_details .cs_img_show_text.cs_text_style_1 {
     margin-bottom: 50px;
+}
+
+.cs_portfolio_details .cs_portfolio_detail_media {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.cs_portfolio_details .cs_portfolio_detail_media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .cs_portfolio_details .cs_img_show_text.cs_text_style_1 .cs_heading_text {

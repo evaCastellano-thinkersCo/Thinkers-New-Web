@@ -321,6 +321,16 @@
             font-weight: 400;
         }
     }
+    .cs_portfolio_detail_media {
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
     .cs_ul_ml {
         margin-left: 50px;
         font-size: 20px;
