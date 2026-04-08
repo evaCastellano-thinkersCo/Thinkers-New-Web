@@ -157,43 +157,44 @@
                - action
                - definir cuales son los campos obligatorios
                -->
-              <form method="post" action="">
+              <form method="post" action="" id="contact-form">
                 <div class="row">
                   <div class="cs_field_group col">
-                    <input class="cs_input_field" type="text" id="test1" placeholder="Name" name="test" />
+                    <input class="cs_input_field" type="text" id="test1" placeholder="Name" name="name" required />
                     <label for="test1" class="cs_input_label">Nombre</label>
                   </div>
                   <div class="cs_field_group col">
-                    <input class="cs_input_field" type="text" id="test2" placeholder="Name" name="test" />
+                    <input class="cs_input_field" type="email" id="test2" placeholder="Name" name="email" required />
                     <label for="test2" class="cs_input_label">Email</label>
                   </div>
                 </div>
                 <div class="cs_height_10 cs_height_lg_20"></div>
                 <div class="row">
                   <div class="cs_field_group col">
-                    <input class="cs_input_field" type="text" id="test3" placeholder="Name" name="test" />
+                    <input class="cs_input_field" type="text" id="test3" placeholder="Name" name="phone" required />
                     <label for="test3" class="cs_input_label">N. de teléfono</label>
                   </div>
                   <div class="cs_field_group col">
-                    <input class="cs_input_field" type="text" id="test4" placeholder="Name" name="test" />
+                    <input class="cs_input_field" type="text" id="test4" placeholder="Name" name="subject" required />
                     <label for="test4" class="cs_input_label">Asunto</label>
                   </div>
                 </div>
                 <div class="cs_height_100 cs_height_lg_60"></div>
                 <div class="cs_field_group">
-                  <input class="cs_input_field" type="text" id="test5" placeholder="Message" name="test" />
+                  <input class="cs_input_field" type="text" id="test5" placeholder="Message" name="message" required />
                   <label for="test5" class="cs_input_label">Mensaje</label>
                 </div>
                 <div class="cs_height_60 cs_height_lg_60"></div>
 
                 <div class="checkbox">
                   <input type="checkbox" name="politica-privacidad" id="politica-privacidad" required>
-                  <label for="politica-privacidad">Acepto la <a target="_blank" href="politica-privacidad.html"><b>Política de
+                  <label for="politica-privacidad">Acepto la <a target="_blank" href="politica-privacidad.html"><b
+                        class="underline">Política de
                         Privacidad</b></a> y que mis datos sean tratados para
                     el envío de información solicitada y de comunicaciones comerciales.</label>
                 </div>
 
-                <button type="submit" class="btn btn_primary" disabled>
+                <button type="submit" class="btn btn_primary" id="contact-submit" disabled>
                   <span>Enviar</span>
                   <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -303,13 +304,21 @@
               </div>
             </div>
           </div>
-          
+
         </div>
+        <div class="cs_height_40 cs_height_lg_20"></div>
         <div class="anim_div_ShowDowns">
-            <p class="cs_text_style_body small_text">
-              <b>Responsable:</b> PENSADORES DE IDEAS, S.L. <b>Finalidad:</b> Atender su solicitud y enviarle comunicaciones comerciales. | <b>Legitimación:</b> Ejecución de un contrato - Consentimiento del interesado - Interés legítimo del Responsable. | <b>Destinatarios:</b> Encargados de Tratamiento fuera de la UE, acogido a cláusula contractual estándar. | <b>Derechos:</b> Tiene derecho a acceder, rectificar y suprimir los datos, así como otros derechos, indicados en la información adicional, que puede ejercer dirigiéndose a la dirección del responsable del tratamiento. | <b>Información adicional:</b> Puede consultar la información adicional y detallada sobre <b><a target="_blank" href="">Protección de Datos</a></b> en nuestra página web.
-            </p>         
-          </div>
+          <p class="cs_text_style_body small_text">
+            <b>Responsable:</b> PENSADORES DE IDEAS, S.L. <b>Finalidad:</b> Atender su solicitud y enviarle
+            comunicaciones comerciales. | <b>Legitimación:</b> Ejecución de un contrato - Consentimiento del interesado
+            - Interés legítimo del Responsable. | <b>Destinatarios:</b> Encargados de Tratamiento fuera de la UE,
+            acogido a cláusula contractual estándar. | <b>Derechos:</b> Tiene derecho a acceder, rectificar y suprimir
+            los datos, así como otros derechos, indicados en la información adicional, que puede ejercer dirigiéndose a
+            la dirección del responsable del tratamiento. | <b>Información adicional:</b> Puede consultar la información
+            adicional y detallada sobre <a target="_blank" href="politica-privacidad.html"><b
+                class="underline">Protección de Datos</b></a> en nuestra página web.
+          </p>
+        </div>
       </div>
     </section>
     <div class="cs_height_150 cs_height_lg_60"></div>
@@ -502,6 +511,40 @@
   <script src="assets/js/plugins/ScrollSmoother.min.js"></script>
   <script src="assets/js/plugins/gsap.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <!-- Botón enviar clickable -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var form = document.getElementById("contact-form");
+      var submitButton = document.getElementById("contact-submit");
+
+      if (!form || !submitButton) {
+        return;
+      }
+
+      var requiredFields = form.querySelectorAll("input[required]");
+
+      function isFieldCompleted(field) {
+        if (field.type === "checkbox") {
+          return field.checked;
+        }
+
+        return field.value.trim() !== "" && field.checkValidity();
+      }
+
+      function updateSubmitState() {
+        var isFormComplete = Array.from(requiredFields).every(isFieldCompleted);
+        submitButton.disabled = !isFormComplete;
+      }
+
+      requiredFields.forEach(function (field) {
+        field.addEventListener("input", updateSubmitState);
+        field.addEventListener("change", updateSubmitState);
+      });
+
+      updateSubmitState();
+    });
+  </script>
 </body>
 
 </html>

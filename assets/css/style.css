@@ -8080,6 +8080,10 @@ color: var(--common-color-black);
     font-weight: 900;
 }
 
+.underline{
+    text-decoration: underline;
+}
+
 .cs_icon .cs_icon_style {
     display: flex;
     justify-content: center;
