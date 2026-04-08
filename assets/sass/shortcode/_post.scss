@@ -46,6 +46,19 @@
   }
 }
 
+.casos-html .cs_featured_case_item {
+  flex: 0 0 calc((100% - 32px) / 3);
+  .cs_featured_case_link {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .casos-html .cs_featured_case_item {
+    flex: 0 0 calc((100% - 16px) / 2);
+  }
+}
+
 .cs_post.cs_style_2 {
   display: block;
   .cs_post_info {

@@ -107,10 +107,10 @@
     --drak-color: #131416;
     --cr_banner-color: #131416;
     --accent-color: #F79837;
-    --body-color: #E6EAF0;
     /* parrafos */
-    --heading-color: #F5F7FA;
+    --body-color: #E6EAF0;
     /* títulos */
+    --heading-color: #F5F7FA;
     --primary-color: #ffffff;
     --common-color-white: #F5F7FA;
     --common-color-black: #131416;
@@ -1249,7 +1249,7 @@ hr {
 
 .cs_btn.cs_style_2 a {
     padding: 15px 24px;
-    border: 1px solid #454545;
+    border: 1px solid var(--gray-400);
     min-height: 45px;
 }
 
@@ -1289,7 +1289,7 @@ hr {
     min-width: 150px;
     min-height: 60px;
     gap: 15px;
-    border: 1px solid #454545;
+    border: 1px solid var(--gray-400);
 }
 
 .cs_share_post .cs_share_btn_g .cs_share_btn:hover {
@@ -2013,7 +2013,7 @@ label {
 }
 
 .cs_section_heading_hr.cs_style_1.cs_color_1 .cs_hr_design {
-    border: 0.5px solid #454545;
+    border: 0.5px solid var(--gray-400);
 }
 
 .cs_hover_layer,
@@ -3158,11 +3158,11 @@ label {
     color: var(--accent-color);
 }
 
-.cs_swiper_navigation_wrap svg{
+.cs_swiper_navigation_wrap svg {
     stroke: var(--primary-color);
 }
 
-.cs_swiper_navigation_wrap svg:hover{
+.cs_swiper_navigation_wrap svg:hover {
     stroke: var(--accent-color);
     transition: 0.3s ease;
 }
@@ -3640,7 +3640,7 @@ label {
 }
 
 
-.active{
+.active {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: var(--accent-color);
@@ -3649,13 +3649,13 @@ label {
     color: var(--gray-500);
 }
 
-.active:hover{
+.active:hover {
     text-decoration: underline;
     text-decoration-color: var(--accent-color);
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
     transition: all 0.3s ease;
-} 
+}
 
 .cs_side_header {
     position: fixed;
@@ -4419,7 +4419,7 @@ label {
 
 .cs_copyright {
     font-size: 18px;
-    border-top: 1px solid #454545;
+    border-top: 1px solid var(--gray-400);
     padding: 35px 0;
 }
 
@@ -5361,7 +5361,7 @@ label {
     margin: 0;
 }
 
-.btn_tertiary svg path{
+.btn_tertiary svg path {
     stroke: var(--btn-tertiary-color);
 }
 
@@ -5378,7 +5378,7 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     padding-right: 24px;
     transition: all 0.3s ease;
 }
@@ -6033,16 +6033,16 @@ a:hover {
     transform: translate(50px, -50px) scale(1);
 }
 
-.cs_card.cs_style_1.cs_color_1 .cs_card_title {
+.dark .cs_card.cs_style_1.cs_color_1 .cs_card_title {
     color: var(--common-color-white);
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_subtitle {
-    color: #c1c1c1;
+    color: var(--body-color);
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_subtitle_services {
-    color: #454545;
+    color: var(--gray-400);
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_link_wrap {
@@ -6057,8 +6057,8 @@ a:hover {
     border-bottom: 1px solid #c1c1c1;
 }
 
-.cs_card_1_list .cs_card.cs_style_1.cs_color_1:not(:last-child) .cs_card_right {
-    border-color: #454545;
+.dark .cs_card_1_list .cs_card.cs_style_1.cs_color_1:not(:last-child) .cs_card_right {
+    border-color: var(--gray-400);
 }
 
 .cs_card.cs_style_2 {
@@ -6238,7 +6238,7 @@ color: var(--common-color-black);
 
 .cs_featured_cases_grid {
     display: flex;
-    gap: 30px;
+    gap: 16px;
     align-items: stretch;
     margin-bottom: 50px;
     flex-wrap: wrap;
@@ -6248,6 +6248,10 @@ color: var(--common-color-black);
 .cs_featured_case_item {
     /* flex: 1 1 0; */
     min-width: 0;
+}
+
+.casos-html .cs_featured_case_item {
+    flex: 0 0 calc((100% - 32px) / 3);
 }
 
 .cs_featured_case_item .cs_featured_case_link {
@@ -6261,7 +6265,13 @@ color: var(--common-color-black);
 }
 
 .casos-html .cs_featured_case_link {
-    width: 300px;
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .casos-html .cs_featured_case_item {
+        flex: 0 0 calc((100% - 16px) / 2);
+    }
 }
 
 .cs_featured_case_item .cs_post_thumb {
@@ -6270,8 +6280,10 @@ color: var(--common-color-black);
 }
 
 .cs_featured_case_item .cs_post_thumb img {
+    /* Tamaño de las imagenes, actualmente cuadradas */
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     display: block;
 }
@@ -7037,7 +7049,7 @@ color: var(--common-color-black);
 }
 
 .cs_portfolio.cs_style_2 .cs_portfolio_subtitle {
-    color: #454545;
+    color: var(--gray-400);
     font-size: 18px;
     font-weight: 400;
 }
@@ -8080,7 +8092,7 @@ color: var(--common-color-black);
     font-weight: 900;
 }
 
-.underline{
+.underline {
     text-decoration: underline;
 }
 
@@ -8094,7 +8106,7 @@ color: var(--common-color-black);
     border-radius: 50%;
 }
 
-.small_text{
+.small_text {
     font-size: 13px;
 }
 
