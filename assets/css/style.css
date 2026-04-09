@@ -2673,7 +2673,7 @@ label {
 .cs_hr_design {
     content: "";
     width: 100%;
-    border-top: 2px solid var(--accent-color);
+    border-top: 2px solid var(--gray-300);
 }
 
 @media screen and (max-width: 1540px) {
@@ -7222,6 +7222,7 @@ color: var(--common-color-black);
     height: 100%;
     object-fit: cover;
     display: block;
+    height: fit-content;
 }
 
 .cs_portfolio_details .cs_img_show_text.cs_text_style_1 .cs_heading_text {
@@ -8118,18 +8119,19 @@ color: var(--common-color-black);
     color: var(--accent-color);
 }
 
-.cs_andrew_jackson {
+.cs_cita {
     padding: 90px 100px;
 }
 
-.cs_andrew_jackson .cs_andrew_jackson_text_body {
+.cs_cita .cs_cita_text_body {
     font-style: italic;
     line-height: 39px;
+    text-align: center;
 }
 
 
 @media screen and (max-width: 991px) {
-    .cs_andrew_jackson {
+    .cs_cita {
         padding: 60px 10px;
         font-size: 18px;
     }
