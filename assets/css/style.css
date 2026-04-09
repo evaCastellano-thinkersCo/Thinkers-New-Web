@@ -1008,14 +1008,14 @@ textarea {
     font-size: 50px;
 }
 
-.cs_font_70{
+.cs_font_70 {
     font-size: 70px;
 }
 
 @media screen and (max-width: 991px) {
-.cs_margin_top_lg_50{
-    margin-top: 50px;
-}
+    .cs_margin_top_lg_50 {
+        margin-top: 50px;
+    }
 
 }
 
@@ -5436,7 +5436,7 @@ label {
     stroke: var(--btn-tertiary-color);
 }
 
-a{
+a {
     color: var(--common-color-black);
 }
 
@@ -5455,39 +5455,39 @@ a:hover {
 
 
 .cs_insight_download_form .cs_download_button_col .btn {
-      white-space: nowrap;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 991px) {
+    .cs_insight_download_form .row {
+        row-gap: 20px;
     }
 
-    @media screen and (max-width: 991px) {
-      .cs_insight_download_form .row {
-        row-gap: 20px;
-      }
-
-      .cs_insight_download_form .cs_download_button_col {
+    .cs_insight_download_form .cs_download_button_col {
         flex: 0 0 100%;
         max-width: 100%;
-      }
-
-      .cs_insight_download_form .cs_download_button_col .btn {
-        width: auto;
-      }
     }
+
+    .cs_insight_download_form .cs_download_button_col .btn {
+        width: auto;
+    }
+}
 
 /* fin botones */
 
 
 /* BREADCRUMBS */
 
-#breadcrumb{
+#breadcrumb {
     margin: 40px 0;
     color: var(--gray-500);
 }
 
-#breadcrumb a{
+#breadcrumb a {
     color: var(--gray-400);
 }
 
-#breadcrumb a:hover{
+#breadcrumb a:hover {
     color: var(--accent-color);
 }
 
@@ -6799,13 +6799,14 @@ color: var(--common-color-black);
   20. Testimonial
 ----------------------------------------------------------------*/
 
-.cs_testimonial h5{
+.cs_testimonial h5 {
     font-size: 20px;
     color: var(--gray-500);
-    margin-bottom: 48px;;
+    margin-bottom: 48px;
+    ;
 }
 
-.cs_testimonial_box .cs_stroke_text{
+.cs_testimonial_box .cs_stroke_text {
     line-height: 0.5em;
 }
 
@@ -7219,7 +7220,6 @@ color: var(--common-color-black);
 
 .cs_portfolio_details .cs_portfolio_detail_media img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     display: block;
     height: fit-content;
@@ -8127,6 +8127,7 @@ color: var(--common-color-black);
     font-style: italic;
     line-height: 39px;
     text-align: center;
+    margin: 0;
 }
 
 
