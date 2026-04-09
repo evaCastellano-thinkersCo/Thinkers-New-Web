@@ -6314,6 +6314,10 @@ a:hover {
   15. Posts
 ----------------------------------------------------------------*/
 
+.cs_post{
+    padding: 16px;
+}
+
 .cs_post.cs_style_1 .cs_post_thumb {
     display: flex;
     align-items: end;
