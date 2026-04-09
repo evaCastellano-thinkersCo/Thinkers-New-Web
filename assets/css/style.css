@@ -6316,28 +6316,7 @@ a:hover {
 
 .cs_post {
     padding: 16px;
-    /* border: 1px solid var(--gray-200); */
 }
-
-/* FIXME: propuesta bordes de las tarjetas casos y blog:
-            el border de .cs_post y .cs_post:hover
-*/
-
-.cs_post:hover {
-    background-color: var(--gray-100);
-    cursor: pointer;
-    /*  border: 1px solid transparent; */
-}
-
-.cs_post:active {
-    background-color: var(--gray-300);
-}
-
-/*
-.cs_post a:hover{
-color: var(--common-color-black);
-}
-*/
 
 .cs_post.cs_style_1 .cs_post_thumb {
     display: block;
@@ -6349,14 +6328,6 @@ color: var(--common-color-black);
 
 .cs_post.cs_style_1 .cs_post_title {
     font-size: 22px;
-}
-
-.cs_post.cs_style_1 .cs_post_thumb {
-    margin-bottom: 30px;
-}
-
-.cs_post.cs_style_1 .cs_post_info {
-    padding-left: 15px;
 }
 
 .cs_featured_cases_grid {
@@ -6398,18 +6369,11 @@ color: var(--common-color-black);
 }
 
 .cs_featured_case_item .cs_post_thumb {
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 3 / 1;
     overflow: hidden;
 }
 
 .cs_featured_case_item .cs_post_thumb img {
-    /* Tamaño de las imagenes, actualmente cuadradas
-    height 50%;
-    para hacer las imagenes panoramicas
-    */
-    width: 100%;
-    height: 100%;
-
     object-fit: cover;
     display: block;
 }
