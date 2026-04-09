@@ -1063,6 +1063,11 @@ hr {
     justify-content: center;
 }
 
+.chips {
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
 .cs_white_color,
 .cs_white_color_hover:hover {
     color: var(--common-color-white);
@@ -7214,7 +7219,7 @@ color: var(--common-color-black);
 }
 
 .cs_portfolio_details .cs_portfolio_detail_media {
-    aspect-ratio: 16 / 9;
+    /* aspect-ratio: 16 / 9; */
     overflow: hidden;
 }
 
