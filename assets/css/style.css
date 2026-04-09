@@ -5453,7 +5453,45 @@ a:hover {
     margin-left: 16px;
 }
 
+
+.cs_insight_download_form .cs_download_button_col .btn {
+      white-space: nowrap;
+    }
+
+    @media screen and (max-width: 991px) {
+      .cs_insight_download_form .row {
+        row-gap: 20px;
+      }
+
+      .cs_insight_download_form .cs_download_button_col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .cs_insight_download_form .cs_download_button_col .btn {
+        width: auto;
+      }
+    }
+
 /* fin botones */
+
+
+/* BREADCRUMBS */
+
+#breadcrumb{
+    margin: 40px 0;
+    color: var(--gray-500);
+}
+
+#breadcrumb a{
+    color: var(--gray-400);
+}
+
+#breadcrumb a:hover{
+    color: var(--accent-color);
+}
+
+/* fin breadcrumbs */
 
 .h3_contact {
     margin-bottom: 32px;
