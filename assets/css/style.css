@@ -178,6 +178,10 @@
     color: var(--gray-600);
 }
 
+.margin_0{
+    margin: 0;
+}
+
 /*--------------------------------------------------------------
 2. Typography
 ----------------------------------------------------------------*/
@@ -1317,6 +1321,12 @@ hr {
 
 .cs_btn.cs_style_2 a {
     padding: 15px 24px;
+    border: 1px solid var(--gray-400);
+    min-height: 45px;
+}
+
+.cs_btn.cs_style_2 span {
+    padding: 8px 16px;
     border: 1px solid var(--gray-400);
     min-height: 45px;
 }
@@ -7240,6 +7250,10 @@ color: var(--common-color-black);
     font-weight: 400;
 }
 
+.cs_img_show_text ul{
+    line-height: 170%;
+}
+
 .cs_portfolio_details .cs_ul_ml {
     margin-left: 50px;
     font-size: 20px;
@@ -8131,8 +8145,8 @@ color: var(--common-color-black);
 .cs_cita .cs_cita_text_body {
     font-style: italic;
     line-height: 39px;
-    text-align: center;
     margin: 0;
+    color: var(--gray-600);
 }
 
 
