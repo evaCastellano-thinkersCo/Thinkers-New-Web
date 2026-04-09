@@ -6799,6 +6799,16 @@ color: var(--common-color-black);
   20. Testimonial
 ----------------------------------------------------------------*/
 
+.cs_testimonial h5{
+    font-size: 20px;
+    color: var(--gray-500);
+    margin-bottom: 48px;;
+}
+
+.cs_testimonial_box .cs_stroke_text{
+    line-height: 0.5em;
+}
+
 .cs_testimonial_1_wrap {
     position: relative;
 }
@@ -6806,7 +6816,7 @@ color: var(--common-color-black);
 .cs_testimonial.cs_style_1 .cs_testimonial_title {
     font-weight: 900;
     font-size: 55px;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
 }
 
 .cs_testimonial.cs_style_1 .cs_testimonial_quote_icon {
@@ -6817,6 +6827,7 @@ color: var(--common-color-black);
     font-weight: 500;
     font-size: 28px;
     margin-bottom: 25px;
+    line-height: 32px;
 }
 
 .cs_testimonial.cs_style_1 .cs_testimonial_meta {
