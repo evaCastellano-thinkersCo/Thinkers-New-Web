@@ -3706,7 +3706,7 @@ label {
 }
 
 
-.active {
+.activo {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: var(--accent-color);
@@ -3715,7 +3715,7 @@ label {
     color: var(--gray-500);
 }
 
-.active:hover {
+.activo:hover {
     text-decoration: underline;
     text-decoration-color: var(--accent-color);
     text-underline-offset: 8px;
@@ -5359,9 +5359,13 @@ label {
     margin-left: 0;
     display: inline-block;
     border-radius: 24px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, padding-right 0.3s ease;
     margin: 1rem;
     border: 0;
+}
+
+.btn:hover {
+    padding-right: 24px;
 }
 
 /* Primario */
@@ -5432,7 +5436,7 @@ label {
     stroke: var(--btn-tertiary-color);
 }
 
-a {
+a{
     color: var(--common-color-black);
 }
 
@@ -5442,11 +5446,11 @@ a:hover {
 
 .btn svg {
     margin-left: 8px;
+    transition: margin-left 0.3s ease;
 }
 
 .btn:hover svg {
     margin-left: 16px;
-    transition: all 0.3s ease;
 }
 
 /* fin botones */

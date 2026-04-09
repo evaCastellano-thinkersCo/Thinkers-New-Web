@@ -160,12 +160,13 @@
   <!-- End Nav bar -->
 
   <div id="scrollsmoother-container">
-    
-    <div class="cs_height_40 cs_height_lg_20"></div>
 
+    <div class="cs_height_40 cs_height_lg_20"></div>
+    <div class="cs_height_150 cs_height_lg_60"></div>
+    <div id="breadcrumb"></div>
     <!-- Start Testimonial -->
     <section>
-      <div class="cs_height_150 cs_height_lg_60"></div>
+
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4">
@@ -535,6 +536,31 @@
 
       updateSubmitState();
     });
+  </script>
+
+  <script>
+    function generarBreadcrumb() {
+      const container = document.getElementById("breadcrumb");
+      const path = window.location.pathname.split("/").filter(p => p);
+
+      let rutaAcumulada = "";
+      let breadcrumbHTML = '<a href="/">Home</a>';
+
+      path.forEach((segmento, index) => {
+        rutaAcumulada += "/" + segmento;
+
+        // Formatear texto (opcional)
+        const texto = segmento
+          .replace(/-/g, " ")
+          .replace(/\b\w/g, l => l.toUpperCase());
+
+        breadcrumbHTML += ` > <a href="${rutaAcumulada}">${texto}</a>`;
+      });
+
+      container.innerHTML = breadcrumbHTML;
+    }
+
+    generarBreadcrumb();
   </script>
 </body>
 
