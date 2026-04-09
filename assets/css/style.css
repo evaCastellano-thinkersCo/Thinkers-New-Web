@@ -6314,16 +6314,13 @@ a:hover {
   15. Posts
 ----------------------------------------------------------------*/
 
-.cs_post {
-    padding: 16px;
-}
-
 .cs_post.cs_style_1 .cs_post_thumb {
-    display: block;
+    display: flex;
+    align-items: end;
 }
 
 .cs_post.cs_style_1 .cs_post_thumb img {
-    width: 100%;
+    width: 70%;
 }
 
 .cs_post.cs_style_1 .cs_post_title {
@@ -6400,6 +6397,7 @@ a:hover {
 
 .cs_post.cs_style_1 .cs_post_info p {
     font-size: 16px;
+    line-height: 1.4em;
 }
 
 .cs_post.cs_style_2 .cs_post_info .cs_section_heading_right {
