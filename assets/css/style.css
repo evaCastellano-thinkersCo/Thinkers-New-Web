@@ -79,8 +79,8 @@
     --gray-500: #2A3138;
     --gray-600: #131416;
 
-    --gray-200-traslucido:#e6eaf080;
-    --gray-400-traslucido:#6E768180;
+    --gray-200-traslucido: #e6eaf080;
+    --gray-400-traslucido: #6E768180;
 
     /* botones */
     --default-btn-primary: #F79837;
@@ -120,12 +120,70 @@
 }
 
 
+/* color de fondo */
+.gray_00 {
+    background-color: var(--gray-00);
+}
+
+.gray_100 {
+    background-color: var(--gray-100);
+}
+
+.gray_200 {
+    background-color: var(--gray-200);
+}
+
+.gray_300 {
+    background-color: var(--gray-300);
+}
+
+.gray_400 {
+    background-color: var(--gray-400);
+}
+
+.gray_500 {
+    background-color: var(--gray-500);
+}
+
+.gray_600 {
+    background-color: var(--gray-600);
+}
+
+/* color de texto */
+.color_gray_00 {
+    color: var(--gray-00);
+}
+
+.color_gray_100 {
+    color: var(--gray-100);
+}
+
+.color_gray_200 {
+    color: var(--gray-200);
+}
+
+.color_gray_300 {
+    color: var(--gray-300);
+}
+
+.color_gray_400 {
+    color: var(--gray-400);
+}
+
+.color_gray_500 {
+    color: var(--gray-500);
+}
+
+.color_gray_600 {
+    color: var(--gray-600);
+}
+
 /*--------------------------------------------------------------
 2. Typography
 ----------------------------------------------------------------*/
 
 /* TODO:
-- colores de fondox
+- colores de fondo
  */
 * {
     font-family: var(--body-font-family);
@@ -950,6 +1008,17 @@ textarea {
     font-size: 50px;
 }
 
+.cs_font_70{
+    font-size: 70px;
+}
+
+@media screen and (max-width: 991px) {
+.cs_margin_top_lg_50{
+    margin-top: 50px;
+}
+
+}
+
 .cs_mp0 {
     list-style: none;
     margin: 0;
@@ -968,7 +1037,7 @@ hr {
     margin: 0;
     padding: 0;
     border: none;
-    border-top: 1px solid #f2f1ff;
+    border-top: 1px solid var(--common-color-white);
 }
 
 .cs_bg {
@@ -1019,19 +1088,6 @@ hr {
 .cs_gray_bg {
     background-color: #181818;
 }
-
-.gray_00 {
-    background-color: var(--gray-00);
-}
-
-.gray_100 {
-    background-color: var(--gray-100);
-}
-
-.gray_200 {
-    background-color: var(--gray-200);
-}
-
 
 .cs_accent_bg_1,
 .cs_accent_bg_1_hover:hover {
@@ -1849,14 +1905,15 @@ label {
 }
 
 .cs_video_block.cs_style1.cs_video_preview_overlay::before {
-      opacity: 1;
-      background-color: var(--gray-200-traslucido);
-    }
+    opacity: 1;
+    background-color: var(--gray-200-traslucido);
+}
 
-    .cs_video_block.cs_style1.cs_video_preview_overlay:hover::before {
-      opacity: 1;
-      background-color: var(--gray-400-traslucido);;
-    }
+.cs_video_block.cs_style1.cs_video_preview_overlay:hover::before {
+    opacity: 1;
+    background-color: var(--gray-400-traslucido);
+    ;
+}
 
 .cs_video_block.cs_style1:hover::before {
     opacity: 1;
@@ -1895,6 +1952,7 @@ label {
     background: #fff;
     border-radius: 50%;
 }
+
 .cs_player_btn:before {
     z-index: 0;
     animation: pulse-border 1500ms ease-out infinite;
@@ -5374,7 +5432,7 @@ label {
     stroke: var(--btn-tertiary-color);
 }
 
-a{
+a {
     color: var(--common-color-black);
 }
 
@@ -5388,11 +5446,6 @@ a:hover {
 
 .btn:hover svg {
     margin-left: 16px;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    padding-right: 24px;
     transition: all 0.3s ease;
 }
 
