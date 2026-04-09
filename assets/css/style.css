@@ -178,7 +178,7 @@
     color: var(--gray-600);
 }
 
-.margin_0{
+.margin_0 {
     margin: 0;
 }
 
@@ -5495,10 +5495,13 @@ a:hover {
 
 #breadcrumb {
     margin: 40px 0;
-    color: var(--gray-500);
 }
 
-#breadcrumb a {
+.dark .separador {
+    color: var(--gray-400);
+}
+
+.dark #breadcrumb a {
     color: var(--gray-400);
 }
 
@@ -5507,6 +5510,18 @@ a:hover {
 }
 
 /* fin breadcrumbs */
+
+/* TODO: FIXME: AAAAAAAA */
+.form_insight {
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .form_insight {
+        flex-direction: column;
+    }
+}
 
 .h3_contact {
     margin-bottom: 32px;
@@ -6314,7 +6329,7 @@ a:hover {
   15. Posts
 ----------------------------------------------------------------*/
 
-.cs_post{
+.cs_post {
     padding: 16px;
 }
 
@@ -6334,7 +6349,6 @@ a:hover {
 .cs_featured_cases_grid {
     display: flex;
     gap: 16px;
-    align-items: stretch;
     margin-bottom: 50px;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -6345,7 +6359,7 @@ a:hover {
     min-width: 0;
 }
 
-.casos-html .cs_featured_case_item {
+.cs_featured_case_item {
     flex: 0 0 calc((100% - 32px) / 3);
 }
 
@@ -6356,15 +6370,15 @@ a:hover {
 }
 
 .cs_featured_case_link {
-    width: 400px;
+    width: 360px;
 }
 
-.casos-html .cs_featured_case_link {
+.cs_featured_case_link {
     width: 100%;
 }
 
 @media screen and (max-width: 991px) {
-    .casos-html .cs_featured_case_item {
+.cs_featured_case_item {
         flex: 0 0 calc((100% - 16px) / 2);
     }
 }
@@ -6411,6 +6425,7 @@ a:hover {
 
 .cs_post.cs_style_1 {
     height: 100%;
+    width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -6782,13 +6797,18 @@ a:hover {
 
 .cs_testimonial h5 {
     font-size: 20px;
-    color: var(--gray-500);
+    color: var(--gray-400);
     margin-bottom: 48px;
     ;
 }
 
 .cs_testimonial_box .cs_stroke_text {
     line-height: 0.5em;
+    color: var(--gray-300);
+}
+
+.cs_testimonial_text {
+    color: var(--gray-300);
 }
 
 .cs_testimonial_1_wrap {
@@ -7216,7 +7236,7 @@ a:hover {
     font-weight: 400;
 }
 
-.cs_img_show_text ul{
+.cs_img_show_text ul {
     line-height: 170%;
 }
 
