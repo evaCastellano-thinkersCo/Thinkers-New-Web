@@ -535,17 +535,23 @@
       let rutaAcumulada = "";
       let breadcrumbHTML = '<a href="/">Home</a>';
 
-      path.forEach((segmento, index) => {
-        if (ignorar.includes(segmento)) return;
+      const visibles = path.filter(p => !ignorar.includes(p));
+
+      visibles.forEach((segmento, index) => {
+        const esUltimo = index === visibles.length - 1;
 
         rutaAcumulada += "/" + segmento;
 
         const texto = decodeURIComponent(segmento)
           .replace(".html", "")
-          .replace(/-/g, " ")
+          .replace(/[-_]/g, " ")
           .replace(/\b\w/g, l => l.toUpperCase());
 
-        breadcrumbHTML += ` > <a href="${rutaAcumulada}">${texto}</a>`;
+        if (esUltimo) {
+          breadcrumbHTML += ` > <span>${texto}</span>`;
+        } else {
+          breadcrumbHTML += ` > <a href="${rutaAcumulada}">${texto}</a>`;
+        }
       });
 
       container.innerHTML = breadcrumbHTML;
