@@ -6346,6 +6346,10 @@ a:hover {
 
 .cs_post.cs_style_1 .cs_post_thumb img {
     width: 100%;
+} 
+
+.post_logo{
+    width: 70%;
 }
 
 .cs_post.cs_style_1 .cs_post_title {
@@ -6390,8 +6394,13 @@ a:hover {
     }
 }
 
-.cs_featured_case_item .cs_post_thumb {
+.cs_featured_case_item .cs_post_thumb.post_logo {
     aspect-ratio: 3 / 1;
+    overflow: hidden;
+}
+
+.cs_featured_case_item .cs_post_thumb {
+    aspect-ratio: 16 / 9;
     overflow: hidden;
 }
 
@@ -7222,7 +7231,7 @@ a:hover {
 }
 
 .cs_portfolio_details .cs_portfolio_detail_media {
-    /* aspect-ratio: 16 / 9; */
+    aspect-ratio: 16 / 9;
     overflow: hidden;
 }
 
