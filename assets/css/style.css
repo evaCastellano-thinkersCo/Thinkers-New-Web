@@ -2644,7 +2644,7 @@ label {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px var(--gray-400) inset !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--common-color-white) inset !important;
   -webkit-text-fill-color: var(--body-color) !important;
   transition: background-color 5000s ease-in-out 0s;
 }
