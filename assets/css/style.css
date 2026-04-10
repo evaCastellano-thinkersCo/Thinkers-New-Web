@@ -6381,7 +6381,6 @@ a:hover {
 .cs_featured_cases_grid {
     display: flex;
     gap: 16px;
-    margin-bottom: 50px;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
