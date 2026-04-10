@@ -167,7 +167,7 @@
 }
 
 .color_gray_400 {
-    color: var(--gray-400);
+    color: var(--gray-400) !important;
 }
 
 .color_gray_500 {
@@ -6405,11 +6405,11 @@ a:hover {
 }
 
 .cs_featured_case_link:hover {
-background-color: var(--gray-100);
+background-color: var(--gray-200);
 }
 
 .cs_featured_case_link:active {
-background-color: var(--gray-200);
+background-color: var(--gray-300);
 }
 
 @media screen and (max-width: 991px) {
@@ -6835,9 +6835,9 @@ background-color: var(--gray-200);
   20. Testimonial
 ----------------------------------------------------------------*/
 
-.cs_testimonial h5 {
+.cs_testimonial p {
     font-size: 20px;
-    color: var(--gray-400);
+    color: var(--gray-200);
     margin-bottom: 48px;
     ;
 }
