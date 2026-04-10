@@ -5431,8 +5431,7 @@ input:-webkit-autofill {
 
 /* Terciario */
 
-.btn_tertiary,
-.btn-tertiary {
+.btn_tertiary {
     background-color: var(--default-btn-tertiary);
     color: var(--btn-tertiary-color);
 }
@@ -5456,6 +5455,28 @@ input:-webkit-autofill {
 .btn_tertiary svg path {
     stroke: var(--btn-tertiary-color);
 }
+
+/* Terciario modo oscuro */
+
+.dark .btn_tertiary {
+    background-color: transparent;
+    color: var(--gray-300);
+}
+
+.dark .btn_tertiary:hover {
+    background-color: var(--gray-400);
+}
+
+.dark .btn_tertiary:active {
+    background-color: var(--gray-500);
+}
+
+.btn_tertiary svg path {
+    stroke: var(--gray-300);
+}
+
+/*  */
+
 
 a {
     color: var(--common-color-black);
@@ -6381,11 +6402,15 @@ a:hover {
 }
 
 .cs_featured_case_link {
-    width: 360px;
+    width: 100%;
 }
 
-.cs_featured_case_link {
-    width: 100%;
+.cs_featured_case_link:hover {
+background-color: var(--gray-100);
+}
+
+.cs_featured_case_link:active {
+background-color: var(--gray-200);
 }
 
 @media screen and (max-width: 991px) {
