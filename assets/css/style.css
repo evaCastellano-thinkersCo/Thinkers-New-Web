@@ -2643,6 +2643,12 @@ label {
     transition: 0.3s ease;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--gray-400) inset !important;
+  -webkit-text-fill-color: var(--body-color) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .cs_field_group .cs_input_field::-moz-placeholder {
     color: transparent;
 }
@@ -6339,11 +6345,12 @@ a:hover {
 }
 
 .cs_post.cs_style_1 .cs_post_thumb img {
-    width: 70%;
+    width: 100%;
 }
 
 .cs_post.cs_style_1 .cs_post_title {
     font-size: 22px;
+    margin: 30px 0 20px 0;
 }
 
 .cs_featured_cases_grid {
@@ -6414,8 +6421,8 @@ a:hover {
 }
 
 .cs_post.cs_style_1 .cs_post_info p {
-    font-size: 16px;
-    line-height: 1.4em;
+    font-size: 14px;
+    line-height: 1.6em;
 }
 
 .cs_post.cs_style_2 .cs_post_info .cs_section_heading_right {
