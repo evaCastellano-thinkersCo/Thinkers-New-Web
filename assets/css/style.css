@@ -2064,7 +2064,7 @@ label {
 }
 
 .cs_section_heading.cs_style_1.cs_type_1 .cs_section_heading_text {
-    max-width: 70%;
+    max-width: 100%;
 }
 
 .cs_section_heading.cs_style_1.cs_type_1 .cs_section_heading_right {
@@ -2080,7 +2080,7 @@ label {
 }
 
 .cs_section_heading.cs_style_1.cs_type_2 .cs_section_heading_text {
-    max-width: 70%;
+    max-width: 100%;
 }
 
 .cs_section_heading.cs_style_1.cs_type_2 .cs_section_heading_right {
@@ -2643,9 +2643,20 @@ label {
     transition: 0.3s ease;
 }
 
+/* FIXME::
+    INPUTS AUTOFILL
+*/
+/* modo oscuro */
+.dark input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--common-color-white) inset;
+  -webkit-text-fill-color: var(--body-color);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* modo claro */
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px var(--common-color-white) inset !important;
-  -webkit-text-fill-color: var(--body-color) !important;
+  -webkit-box-shadow: 0 0 0 1000px rgb(255,255,255) inset;
+  -webkit-text-fill-color: var(--body-color);
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -5471,7 +5482,7 @@ input:-webkit-autofill {
     background-color: var(--gray-500);
 }
 
-.btn_tertiary svg path {
+.dark .btn_tertiary svg path {
     stroke: var(--gray-300);
 }
 
