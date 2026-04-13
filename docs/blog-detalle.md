@@ -113,7 +113,9 @@ HTML necesario:
     </div>
 <!-- End Video Block -->
 ```
+Para cambiar el vídeo a reproducir pegar la url en ``href``, y para cambiar la imagen de previsualicación modificar la ruta en ``data-src``.
 
+---
 ```html
  <!-- Start Video Popup -->
   <div class="cs_video_popup">

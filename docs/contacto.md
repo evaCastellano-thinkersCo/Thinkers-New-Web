@@ -32,16 +32,16 @@ Incluye:
 - Isotope
 
 ---
-<!-- ## Capturas de pantalla
+## Capturas de pantalla
 ### Mobile
-![Preview blog - mobile](img/preview-blog-mobile.png)
+![Preview contacto - mobile](img/preview-contacto-mobile.png)
 
 ### Tablet
-![Preview blog - tablet](img/preview-blog-tablet.png)
+![Preview contacto - tablet](img/preview-contacto-tablet.png)
 
 ### Ordenador
-![Preview blog - ordenador](img/preview-blog-ordenador.png)
- -->
+![Preview contacto - ordenador](img/preview-contacto-ordenador.png)
+
 ---
 
 ## Estructura relevante
@@ -86,10 +86,10 @@ assets/
 - Navegación secundaria
 
 ---
+<!--
+## Cómo funciona el formulario con envío de email
 
-## Cómo funciona el formulario con envio de email
-
-<!-- TODO: explicar como se envia (excel y mail) y como crearlo de 0 -->
+ TODO: explicar como se envia (excel y mail) y como crearlo de 0 -->
 
 ---
 
@@ -97,7 +97,7 @@ assets/
 
 Incluidas al final del documento:
 
-```html
+```
 jquery-3.7.0.min.js
 isotope.pkg.min.js
 swiper.min.js
