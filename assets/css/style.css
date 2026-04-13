@@ -2643,9 +2643,15 @@ label {
     transition: 0.3s ease;
 }
 
-/* FIXME::
-    INPUTS AUTOFILL
-*/
+/* Cambiar estilo de las flechas del input tipo text */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* INPUTS AUTOFILL */
 /* modo oscuro */
 .dark input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px var(--common-color-white) inset;
