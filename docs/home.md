@@ -1,14 +1,20 @@
-# Home <!-- TODO -->
+# Home 
 
 ## Descripción
 
-Página de descripción sobre la empresa, explicando el recorrido cronológicamente y enseñando algunos de los premios que ha conseguido el equipo.
+Página principal del sitio web de la empresa. Actúa como punto de entrada y presentación general de la marca, mostrando su propuesta de valor, servicios principales, casos destacados e insights.
+
+Su objetivo es comunicar de forma clara la identidad de la empresa y guiar al usuario hacia las distintas secciones del sitio.
 
 Incluye:
-- Navegación principal del sitio
-- Explicación de quienes somos
-- Orden cronológico de hitos
-- Premios
+- Hero con propuesta de valor principal
+- Logos de clientes/partners
+- Sección de propuesta de valor
+- Bloque de “reenfoque”
+- Sección “cómo podemos ayudarte”
+- Ejes de actuación
+- Casos destacados
+- Insights
 - Sección CTA (Call To Action)
 - Footer con información de contacto y redes sociales
 
@@ -32,13 +38,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview about - mobile](img/preview-about-mobile.png)
+![Preview home - mobile](img/preview-home-mobile.png)
 
 ### Tablet
-![Preview about - tablet](img/preview-about-tablet.png)
+![Preview home - tablet](img/preview-home-tablet.png)
 
 ### Ordenador
-![Preview about - ordenador](img/preview-about-ordenador.png)
+![Preview home - ordenador](img/preview-home-ordenador.png)
 
 ---
 
@@ -53,8 +59,9 @@ assets/
  │    ├── plugins/
  │    └── main.js
  └── img/
+      └── partners/
 
- about.html  
+ index.html  
 ```
 
 ---
@@ -66,22 +73,67 @@ assets/
 - Logo
 - Menú de navegación principal
 
-### 2. Sección Sobre nosotros
+### 2. Hero
 
-- Título e introducción
-- Cronología
+- Título y mensaje principal de la marca
+- Subtítulo explicativo
+- CTA principal (Contacto / Servicios)
+- Imagen
 
-### 3. Nuestros Premios
-Listado de premios conseguidos por el equipo.
+### 3. Logos de clientes / partners
+Carrusel animado de marcas colaboradoras.
 
 
-### 4. CTA (Call To Action)
+### 4. Propuesta de valor
+
+- Explicación del enfoque de la empresa
+- Diferenciación frente al mercado
+- Mensaje estratégico principal
+
+### 5. Reenfoque
+
+- Problemas habituales del sector:
+  - Falta de acción
+  - Desalineación en la ejecución
+  - Resistencia al cambio
+  - Dependencia externa
+- Introducción al enfoque de la empresa
+
+### 6. Cómo podemos ayudarte
+
+- Beneficios clave del servicio:
+  - Transformación real
+  - Innovación con foco
+  - Ejecución alineada
+  - Adopción del cambio
+  - Desarrollo de capacidades internas
+
+### 7. Ejes de actuación
+
+- Thinkers Lab (exploración)
+- Thinkers Drive (ejecución)
+- Thinkers Capacity (capacitación)
+
+### 8. Casos destacados
+
+- Proyectos reales con clientes
+- Descripción breve de impacto por cliente
+- Enlace a listado completo de casos
+
+### 9. Insights
+
+- Contenidos editoriales / artículos
+- Tendencias y aprendizaje
+- Slider con destacados
+
+### 10. CTA (Call To Action)
 
 Sección para redirigir a contacto:
 
 > Contáctanos →
 
-### 5. Footer
+
+### 11. Footer
 
 - Información corporativa
 - Redes sociales
@@ -90,29 +142,99 @@ Sección para redirigir a contacto:
 
 ---
 
-## Cómo añadir un nuevo premio
+## Cómo añadir un nuevo reenfoque
 
 Poner dentro del div: 
 ```html
-<div class="cs_card cs_style_2 anim_div_ShowDowns">
+<div class="row reenfoque anim_div_ShowLeftSide">
 ```
 el siguiente bloque:
 ```html
-<div class="cs_card_left">
-    <div class="cs_card_logo">
-        <img src="" alt="Award" />
+<div class="col-md-3 col-12">
+    <div class="cs_stroke_text">
+        <span class="cs_font_50">Número</span>
     </div>
-    <div>
-    <h2 class="cs_card_title">Título del premio</h2>
-        <div class="cs_card_subtitle">
-         Descripción del premio.
-        </div>
+    <div class="text-section">
+        <h6>Título/Nombre</h6>
     </div>
- </div>
-<div class="cs_card_right">
-    <h2 class="cs_card_brand">(Tipo/Año)?</h2>
 </div>
 ```
+
+
+---
+
+## Cómo añadir una nueva tarjeta en "como podemos ayudarte"
+
+Poner dentro del div: 
+```html
+<div class="row g-4 cs_help_cards">
+```
+el siguiente bloque:
+```html
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="cs_startup_agency cs_card">
+        <h6>Título</h6>
+        <p class="cs_font_16 cs_mp0">
+            Descripción
+        </p>
+    </div>
+</div>
+```
+
+---
+
+## Cómo añadir un nuevo eje de actuación
+
+Poner dentro del div: 
+```html
+<div class="cs_card_1_list">
+```
+el siguiente bloque:
+```html
+<a href="" class="cs_card cs_style_1 card_link cs_color_1 anim_div_ShowDowns">
+    <div class="cs_card_left">
+        <div class="cs_card_number cs_primary_font">
+            Número
+        </div>
+    </div>
+    <div class="cs_card_right">
+        <div class="cs_card_right_in">
+            <h2 class="cs_card_title">
+                Título del eje
+            </h2>
+            <div class="cs_card_subtitle">
+                Descripción del eje de actuación.
+            </div>
+        </div>
+    </div>
+</a>
+```
+
+---
+
+## Cómo añadir un nuevo caso destacado
+
+Poner dentro del div: 
+```html
+<div class="cs_featured_cases_grid">
+```
+el siguiente bloque:
+```html
+<div class="cs_featured_case_item cs_color_1 anim_div_ShowDowns">
+    <div class="cs_post cs_style_1">
+        <div class="cs_post_thumb post_logo">
+            <img src="ruta/imagen.png" alt="Thumb" />
+        </div>
+        <div class="cs_post_info">
+            <p class="cs_m0">
+                Breve descripción del caso.
+            </p>
+        </div>
+    </div>
+</div>
+```
+> [!NOTE]  
+> La imagen actúa como título y esta debe ser de 16:9
 
 
 ---

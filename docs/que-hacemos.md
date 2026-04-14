@@ -28,16 +28,16 @@ Incluye:
 - Isotope
 
 ---
-<!-- ## Capturas de pantalla
+## Capturas de pantalla
 ### Mobile
-![Preview about - mobile](img/preview-about-mobile.png)
+![Preview que hacemos - mobile](img/preview-que-hacemos-mobile.png)
 
 ### Tablet
-![Preview about - tablet](img/preview-about-tablet.png)
+![Preview que hacemos - tablet](img/preview-que-hacemos-tablet.png)
 
 ### Ordenador
-![Preview about - ordenador](img/preview-about-ordenador.png)
- -->
+![Preview que hacemos - ordenador](img/preview-que-hacemos-ordenador.png)
+
 ---
 
 ## Estructura relevante
