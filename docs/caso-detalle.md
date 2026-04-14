@@ -1,14 +1,13 @@
-# Blog
+# Caso detalle
 
 ## Descripción
 
-Página de listado de artículos del blog de Thinkers Co. donde se muestran diferentes publicaciones relacionadas con innovación, diseño, estrategia y transformación empresarial.
+Página de un caso específico de todos los casos de Thinkers Co. donde se muestra la información detallada de dicho caso.
 
 Incluye:
-
 - Navegación principal del sitio
-- Título y pequeña explicación de la página
-- Listado de posts en formato grid
+- Breadcrumbs
+- Título y descripción del caso
 - Sección CTA (Call To Action)
 - Footer con información de contacto y redes sociales
 
@@ -32,14 +31,18 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview blog - mobile](img/preview-blog-mobile.png)
+![Preview caso detalle - mobile](img/preview-caso-detalle-mobile.png)
 
 ### Tablet
-![Preview blog - tablet](img/preview-blog-tablet.png)
+![Preview caso detalle - tablet](img/preview-caso-detalle-tablet.png)
 
 ### Ordenador
-![Preview blog - ordenador](img/preview-blog-ordenador.png)
-
+![Preview caso detalle - ordenador](img/preview-caso-detalle-ordenador.png)
+<!-- 
+TODO: poner el resto de imagenes como estas:
+- mobile: Samsung Galaxy S20 Ultra
+- Tablet: iPad Air
+ -->
 ---
 
 ## Estructura relevante
@@ -53,9 +56,10 @@ assets/
  │    ├── plugins/
  │    └── main.js
  └── img/
+      └── casos/
 
- blogs/
- ├── blog-detalle/    
+ casos/
+ ├── caso-detalle/    
  └── index.html   
 ```
 
@@ -68,15 +72,15 @@ assets/
 - Logo
 - Menú de navegación principal
 
-### 2. Sección Blog
+### 2. Sección Caso
 
-- Título y descripción
-- Grid de artículos
-- Cada post contiene:
-  - Imagen (thumbnail)
-  - Título
-  - Extracto
-  - Enlace a detalle
+- Breadcrumbs
+- Título e introducción
+- Chips de información
+- Imagen
+- Descripción del caso
+- Cita
+- Descripción del caso
 
 ### 3. CTA (Call To Action)
 
@@ -93,39 +97,11 @@ Sección para redirigir a contacto:
 
 ---
 
-## Cómo añadir un nuevo post
-
-Duplicar un bloque dentro de:
-
-```html
-<div class="cs_featured_cases_grid">
-```
-
-Ejemplo:
-
-```html
-<div class="cs_featured_case_item">
-  <a href="blog-detalle/nuevo-post.html">
-    <div class="cs_post">
-      <div class="cs_post_thumb">
-        <img src="../assets/img/placeholder3.png" />
-      </div>
-      <div class="cs_post_info">
-        <h2 class="cs_post_title">Título del post</h2>
-        <p>Descripción corta</p>
-      </div>
-    </div>
-  </a>
-</div>
-```
-
----
-
 ## Dependencias JS
 
 Incluidas al final del documento:
 
-```html
+```
 jquery-3.7.0.min.js
 isotope.pkg.min.js
 swiper.min.js
@@ -140,7 +116,7 @@ main.js
 
 Se puede modificar:
 
-- El contenido del blog → Editando los bloques HTML
+- El contenido del caso → Editando los bloques HTML
 - Los estilos → buscando las clases correspondientes en `assets/css/style.css`
 - Las animaciones → `assets/js/main.js` + GSAP
 

@@ -6,6 +6,9 @@ Página de un artículo específico del blog de Thinkers Co. donde se muestra la
 
 Incluye:
 - Navegación principal del sitio
+- Breadcrumbs
+- Título y descripción del blog
+- Artículos relacionados
 - Sección CTA (Call To Action)
 - Footer con información de contacto y redes sociales
 
@@ -71,6 +74,7 @@ assets/
 - Título e introducción
 - Imagen
 - Descripción
+- Conclusión
 - Galería de imágenes
 - Vídeo
 

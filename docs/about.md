@@ -1,14 +1,14 @@
-# Blog
+# Nosotros
 
 ## Descripción
 
-Página de listado de artículos del blog de Thinkers Co. donde se muestran diferentes publicaciones relacionadas con innovación, diseño, estrategia y transformación empresarial.
+Página de descripción sobre la empresa, explicando el recorrido cronológicamente y enseñando algunos de los premios que ha conseguido el equipo.
 
 Incluye:
-
 - Navegación principal del sitio
-- Título y pequeña explicación de la página
-- Listado de posts en formato grid
+- Explicación de quienes somos
+- Orden cronológico de hitos
+- Premios
 - Sección CTA (Call To Action)
 - Footer con información de contacto y redes sociales
 
@@ -32,13 +32,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview blog - mobile](img/preview-blog-mobile.png)
+![Preview about - mobile](img/preview-about-mobile.png)
 
 ### Tablet
-![Preview blog - tablet](img/preview-blog-tablet.png)
+![Preview about - tablet](img/preview-about-tablet.png)
 
 ### Ordenador
-![Preview blog - ordenador](img/preview-blog-ordenador.png)
+![Preview about - ordenador](img/preview-about-ordenador.png)
 
 ---
 
@@ -54,9 +54,7 @@ assets/
  │    └── main.js
  └── img/
 
- blogs/
- ├── blog-detalle/    
- └── index.html   
+ about.html  
 ```
 
 ---
@@ -68,23 +66,22 @@ assets/
 - Logo
 - Menú de navegación principal
 
-### 2. Sección Blog
+### 2. Sección Sobre nosotros
 
-- Título y descripción
-- Grid de artículos
-- Cada post contiene:
-  - Imagen (thumbnail)
-  - Título
-  - Extracto
-  - Enlace a detalle
+- Título e introducción
+- Cronología
 
-### 3. CTA (Call To Action)
+### 3. Nuestros Premios
+Listado de premios conseguidos por el equipo.
+
+
+### 4. CTA (Call To Action)
 
 Sección para redirigir a contacto:
 
 > Contáctanos →
 
-### 4. Footer
+### 5. Footer
 
 - Información corporativa
 - Redes sociales
@@ -93,31 +90,30 @@ Sección para redirigir a contacto:
 
 ---
 
-## Cómo añadir un nuevo post
+## Cómo añadir un nuevo premio
 
-Duplicar un bloque dentro de:
-
+Poner dentro del div: 
 ```html
-<div class="cs_featured_cases_grid">
+<div class="cs_card cs_style_2 anim_div_ShowDowns">
 ```
-
-Ejemplo:
-
+el siguiente bloque:
 ```html
-<div class="cs_featured_case_item">
-  <a href="blog-detalle/nuevo-post.html">
-    <div class="cs_post">
-      <div class="cs_post_thumb">
-        <img src="../assets/img/placeholder3.png" />
-      </div>
-      <div class="cs_post_info">
-        <h2 class="cs_post_title">Título del post</h2>
-        <p>Descripción corta</p>
-      </div>
+<div class="cs_card_left">
+    <div class="cs_card_logo">
+        <img src="" alt="Award" />
     </div>
-  </a>
+    <div>
+    <h2 class="cs_card_title">Título del premio</h2>
+        <div class="cs_card_subtitle">
+         Descripción del premio.
+        </div>
+    </div>
+ </div>
+<div class="cs_card_right">
+    <h2 class="cs_card_brand">(Tipo/Año)?</h2>
 </div>
 ```
+
 
 ---
 
@@ -125,7 +121,7 @@ Ejemplo:
 
 Incluidas al final del documento:
 
-```html
+```
 jquery-3.7.0.min.js
 isotope.pkg.min.js
 swiper.min.js
@@ -140,7 +136,7 @@ main.js
 
 Se puede modificar:
 
-- El contenido del blog → Editando los bloques HTML
+- El contenido de la página → Editando los bloques HTML
 - Los estilos → buscando las clases correspondientes en `assets/css/style.css`
 - Las animaciones → `assets/js/main.js` + GSAP
 

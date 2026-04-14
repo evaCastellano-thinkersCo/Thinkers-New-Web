@@ -1,14 +1,13 @@
-# Blog
+# Casos
 
 ## Descripción
 
-Página de listado de artículos del blog de Thinkers Co. donde se muestran diferentes publicaciones relacionadas con innovación, diseño, estrategia y transformación empresarial.
+Página de listado de todos los casos que ha realizado Thinkers co.
 
 Incluye:
-
 - Navegación principal del sitio
-- Título y pequeña explicación de la página
-- Listado de posts en formato grid
+- Título y pequeña descripción de la empresa
+- Listado de los casos en formato grid
 - Sección CTA (Call To Action)
 - Footer con información de contacto y redes sociales
 
@@ -30,16 +29,16 @@ Incluye:
 - Isotope
 
 ---
-## Capturas de pantalla
+ ## Capturas de pantalla
 ### Mobile
-![Preview blog - mobile](img/preview-blog-mobile.png)
+![Preview casos - mobile](img/preview-casos-mobile.png)
 
 ### Tablet
-![Preview blog - tablet](img/preview-blog-tablet.png)
+![Preview casos - tablet](img/preview-casos-tablet.png)
 
 ### Ordenador
-![Preview blog - ordenador](img/preview-blog-ordenador.png)
-
+![Preview casos - ordenador](img/preview-casos-ordenador.png)
+ 
 ---
 
 ## Estructura relevante
@@ -54,8 +53,8 @@ assets/
  │    └── main.js
  └── img/
 
- blogs/
- ├── blog-detalle/    
+ casos/
+ ├── caso-detalle/    
  └── index.html   
 ```
 
@@ -68,11 +67,11 @@ assets/
 - Logo
 - Menú de navegación principal
 
-### 2. Sección Blog
+### 2. Sección Casos
 
-- Título y descripción
+- Título e introducción
 - Grid de artículos
-- Cada post contiene:
+- Cada tarjeta caso contiene:
   - Imagen (thumbnail)
   - Título
   - Extracto
@@ -93,7 +92,7 @@ Sección para redirigir a contacto:
 
 ---
 
-## Cómo añadir un nuevo post
+## Cómo añadir un nuevo caso
 
 Duplicar un bloque dentro de:
 
@@ -104,18 +103,20 @@ Duplicar un bloque dentro de:
 Ejemplo:
 
 ```html
-<div class="cs_featured_case_item">
-  <a href="blog-detalle/nuevo-post.html">
-    <div class="cs_post">
-      <div class="cs_post_thumb">
-        <img src="../assets/img/placeholder3.png" />
-      </div>
-      <div class="cs_post_info">
-        <h2 class="cs_post_title">Título del post</h2>
-        <p>Descripción corta</p>
-      </div>
+<div class="cs_featured_case_item cs_color_1 anim_div_ShowDowns">
+    <a href="caso-detalle/ibercaja.html" class="cs_featured_case_link">
+    <div class="cs_post cs_style_1">
+        <div class="cs_post_thumb">
+        <img src="../assets/img/casos/caso_ibercaja.png" alt="Thumb" />
+        </div>
+        <div class="cs_post_info">
+        <h2 class="cs_post_title">Título</h2>
+        <p class="cs_m0">
+            Breve descripción del caso.
+        </p>
+        </div>
     </div>
-  </a>
+    </a>
 </div>
 ```
 
@@ -140,7 +141,7 @@ main.js
 
 Se puede modificar:
 
-- El contenido del blog → Editando los bloques HTML
+- El contenido de los casos → Editando los bloques HTML
 - Los estilos → buscando las clases correspondientes en `assets/css/style.css`
 - Las animaciones → `assets/js/main.js` + GSAP
 
