@@ -5416,7 +5416,7 @@ input:-webkit-autofill {
 }
 
 /* Primario */
-.btn_primary {
+.btn_primary, .btn_primary:focus {
     background-color: var(--default-btn-primary);
     color: var(--btn-primary-color);
 }
