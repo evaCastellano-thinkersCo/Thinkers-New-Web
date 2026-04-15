@@ -571,10 +571,11 @@
       const regex = /[<>]/;
 
       if (regex.test(nombre) || regex.test(asunto) || regex.test(mensaje)) {
-        estado.innerText = "Error, no se pueden introducir los símbolos < o >";
+        estado.classList.toggle("error");
+        estado.innerText = "Error: no se pueden introducir los símbolos < o >";
         return;
       }
-
+      estado.classList.remove("error");
       estado.innerText = "Enviando...";
 
       const formData = new FormData(form);
@@ -588,13 +589,16 @@
         const text = await res.text();
 
         if (text === "OK") {
+          estado.classList.remove("error");
           estado.innerText = "Mensaje enviado correctamente";
           form.reset();
         } else {
+          estado.classList.toggle("error");
           estado.innerText = "Error al enviar";
         }
 
       } catch (err) {
+        estado.classList.toggle("error");
         estado.innerText = "Error de conexión";
         console.error(err);
       }

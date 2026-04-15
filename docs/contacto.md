@@ -209,10 +209,8 @@ function doPost(e) {
 > El código analiza si el cliente ha enviado carácteres <> y rechaza el envío en su caso.
 
 
-
 > [!NOTE]Nota
 > También comprueba que el email contenga ``@``, que el mensaje tenga más de 5 caracteres y que el número de teléfono sea numérico.
-
 
 
 >[!NOTE]Nota
@@ -254,6 +252,9 @@ Se puede modificar:
 - Los estilos → buscando las clases correspondientes en `assets/css/style.css`
 - Las animaciones → `assets/js/main.js` + GSAP
 
+
+>[!NOTE]Nota
+> La clase "error" en el script es la que hace que cambie el color de texto a rojo cuando hay un error en el envío del formulario.
 ---
 
 ## Licencia

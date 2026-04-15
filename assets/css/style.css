@@ -412,6 +412,10 @@ textarea {
     padding-left: 20px;
 }
 
+.error{
+    color: red;
+}
+
 
 /*--------------------------------------------------------------
   3. Preloader
