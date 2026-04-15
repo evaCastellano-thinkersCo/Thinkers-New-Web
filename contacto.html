@@ -186,10 +186,7 @@
 
                 <div class="checkbox">
                   <input type="checkbox" name="politica-privacidad" id="politica-privacidad" required>
-                  <label for="politica-privacidad">Acepto la <a target="_blank" href="politica-privacidad.html"><b
-                        class="underline">Política de
-                        Privacidad</b></a> y que mis datos sean tratados para
-                    el envío de información solicitada y de comunicaciones comerciales.</label>
+                  <label for="politica-privacidad">Acepto la <a target="_blank" href="politica-privacidad.html"><u><b>Política de Privacidad</b></u></a> y que mis datos sean tratados para el envío de información solicitada y de comunicaciones comerciales.</label>
                 </div>
 
 
@@ -323,8 +320,7 @@
             acogido a cláusula contractual estándar. | <b>Derechos:</b> Tiene derecho a acceder, rectificar y suprimir
             los datos, así como otros derechos, indicados en la información adicional, que puede ejercer dirigiéndose a
             la dirección del responsable del tratamiento. | <b>Información adicional:</b> Puede consultar la información
-            adicional y detallada sobre <a target="_blank" href="politica-privacidad.html"><b
-                class="underline">Protección de Datos</b></a> en nuestra página web.
+            adicional y detallada sobre <a target="_blank" href="politica-privacidad.html"><u><b>Protección de Datos</b></u></a> en nuestra página web.
           </p>
         </div>
       </div>
@@ -386,7 +382,7 @@
                                 Somos una agencia de estrategia y diseño empresarial que te ayuda a reimaginar y
                                 repensar tu negocio.
                             </p>
-                            <a href="info@thinkersco.com" class="cs_primary_font"><span>info@thinkersco.com</span></a>
+                            <a href="mailto:info@thinkersco.com" class="cs_primary_font"><span>info@thinkersco.com</span></a>
                         </div>
                     </div>
                     <div class="col-lg-6 offset-lg-1">
@@ -567,54 +563,66 @@
 
   <!-- Funcionalidad formulario -->
   <script>
-    const form = document.getElementById("contact-form");
-    const estado = document.getElementById("estado");
+  const form = document.getElementById("contact-form");
+  const estado = document.getElementById("estado");
 
-    const URL = "https://script.google.com/macros/s/AKfycbzie6NDVN6bEgqUaqGTb7o7R1Q4XDnhLPIjciti1nUjRX2K03bS1IjXnBJFQW6TbDbMXw/exec";
+  const URL = "https://script.google.com/macros/s/AKfycbySSHnOG7y2uHbBXhCHNWxaIXZY-O8qtL1CRzvEmb4NaxQf_mdzio_74eqx_X3_6fm7jA/exec";
 
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-      const nombre = form.nombre.value;
-      const asunto = form.asunto.value;
-      const mensaje = form.mensaje.value;
+    const nombre = form.nombre.value;
+    const asunto = form.asunto.value;
+    const mensaje = form.mensaje.value;
 
-      const regex = /[<>]/;
+if (mensaje.trim().length <= 5) {
+  estado.classList.add("error");
+  estado.innerText = "Error: El mensaje debe tener al menos 5 caracteres";
+  return;
+}
 
-      if (regex.test(nombre) || regex.test(asunto) || regex.test(mensaje)) {
+    const regex = /[<>]/;
+
+    if (regex.test(nombre) || regex.test(asunto) || regex.test(mensaje)) {
+      estado.classList.add("error");
+      estado.innerText = "Error: no se pueden introducir los símbolos < o >";
+      return;
+    }
+
+    estado.classList.remove("error");
+    estado.innerText = "Enviando...";
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(URL, {
+        method: "POST",
+        body: formData
+      });
+
+      const text = await res.text();
+
+      if (text === "OK") {
+        estado.classList.remove("error");
+        estado.innerText = "Mensaje enviado correctamente";
+        form.reset();
+
+        setTimeout(() => {
+          estado.innerText = "";
+        }, 60000);
+
+      } else {
         estado.classList.add("error");
-        estado.innerText = "Error: no se pueden introducir los símbolos < o >";
-        return;
+        estado.innerText = "Error al enviar";
       }
-      estado.classList.remove("error");
-      estado.innerText = "Enviando...";
 
-      const formData = new FormData(form);
-
-      try {
-        const res = await fetch(URL, {
-          method: "POST",
-          body: formData
-        });
-
-        const text = await res.text();
-
-        if (text === "OK") {
-          estado.classList.remove("error");
-          estado.innerText = "Mensaje enviado correctamente";
-          form.reset();
-        } else {
-          estado.classList.add("error");
-          estado.innerText = "Error al enviar";
-        }
-
-      } catch (err) {
-        estado.classList.add("error");
-        estado.innerText = "Error de conexión";
-        console.error(err);
-      }
-    });
-  </script>
+    } catch (err) {
+      estado.classList.add("error");
+      estado.innerText = "Error de conexión";
+      console.error(err);
+    }
+  });
+</script>
 </body>
 
 </html>

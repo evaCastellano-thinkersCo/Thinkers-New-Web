@@ -89,7 +89,7 @@
     --disabled-btn-primary: #C4CBD6;
     --btn-primary-color: #F5F7FA;
 
-    --default-btn-secondary: #ffffff;
+    --default-btn-secondary: #ffffff00;
     --hover-btn-secondary: #F5F7FA;
     --active-btn-secondary: #E6EAF0;
     --disabled-secondary: #C4CBD6;
@@ -5405,6 +5405,7 @@ input:-webkit-autofill {
     padding: 16px 32px;
     margin-left: 0;
     display: inline-block;
+    white-space: nowrap;
     border-radius: 24px;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, padding-right 0.3s ease;
     margin: 1rem;

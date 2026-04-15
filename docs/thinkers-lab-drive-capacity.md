@@ -77,7 +77,7 @@ Listado de servicios relacionados con Thinkers Lab / Thinkers Drive / Thinkers C
 
 ### 4. Casos destacados
 Listado de los 3 casos más destacados de Thinkers co.
-Incluye un botón "Ver todos los casos" para ir a la página ``casos.html``, donde se listan todos los casos realizados.
+Incluye un botón "Ver todos los casos" para ir a la página ``casos/index.html``, donde se listan todos los casos realizados.
 
 ### 5. CTA (Call To Action)
 
