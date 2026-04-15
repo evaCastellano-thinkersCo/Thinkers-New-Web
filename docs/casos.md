@@ -31,13 +31,13 @@ Incluye:
 ---
  ## Capturas de pantalla
 ### Mobile
-![Preview casos - mobile](img/preview-casos-mobile.png)
+![Preview casos - mobile](img/caso/preview-casos-mobile.png)
 
 ### Tablet
-![Preview casos - tablet](img/preview-casos-tablet.png)
+![Preview casos - tablet](img/caso/preview-casos-tablet.png)
 
 ### Ordenador
-![Preview casos - ordenador](img/preview-casos-ordenador.png)
+![Preview casos - ordenador](img/caso/preview-casos-ordenador.png)
  
 ---
 

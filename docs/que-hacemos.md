@@ -30,13 +30,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview que hacemos - mobile](img/preview-que-hacemos-mobile.png)
+![Preview que hacemos - mobile](img/que-hacemos/preview-que-hacemos-mobile.png)
 
 ### Tablet
-![Preview que hacemos - tablet](img/preview-que-hacemos-tablet.png)
+![Preview que hacemos - tablet](img/que-hacemos/preview-que-hacemos-tablet.png)
 
 ### Ordenador
-![Preview que hacemos - ordenador](img/preview-que-hacemos-ordenador.png)
+![Preview que hacemos - ordenador](img/que-hacemos/preview-que-hacemos-ordenador.png)
 
 ---
 

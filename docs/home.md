@@ -38,13 +38,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview home - mobile](img/preview-home-mobile.png)
+![Preview home - mobile](img/home/preview-home-mobile.png)
 
 ### Tablet
-![Preview home - tablet](img/preview-home-tablet.png)
+![Preview home - tablet](img/home/preview-home-tablet.png)
 
 ### Ordenador
-![Preview home - ordenador](img/preview-home-ordenador.png)
+![Preview home - ordenador](img/home/preview-home-ordenador.png)
 
 ---
 
@@ -58,7 +58,7 @@ assets/
  ├── js/
  │    ├── plugins/
  │    └── main.js
- └── img/
+ └── img/home/
       └── partners/
 
  index.html  

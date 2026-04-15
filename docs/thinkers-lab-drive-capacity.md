@@ -32,13 +32,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview thinkers lab - mobile](img/preview-thinkers-lab-mobile.png)
+![Preview thinkers lab - mobile](img/que-hacemos/preview-thinkers-lab-mobile.png)
 
 ### Tablet
-![Preview thinkers lab - tablet](img/preview-thinkers-lab-tablet.png)
+![Preview thinkers lab - tablet](img/que-hacemos/preview-thinkers-lab-tablet.png)
 
 ### Ordenador
-![Preview thinkers lab - ordenador](img/preview-thinkers-lab-ordenador.png)
+![Preview thinkers lab - ordenador](img/que-hacemos/preview-thinkers-lab-ordenador.png)
 
 ---
 

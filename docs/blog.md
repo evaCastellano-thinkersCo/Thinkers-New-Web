@@ -32,13 +32,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview blog - mobile](img/preview-blog-mobile.png)
+![Preview blog - mobile](img/blog/preview-blog-mobile.png)
 
 ### Tablet
-![Preview blog - tablet](img/preview-blog-tablet.png)
+![Preview blog - tablet](img/blog/preview-blog-tablet.png)
 
 ### Ordenador
-![Preview blog - ordenador](img/preview-blog-ordenador.png)
+![Preview blog - ordenador](img/blog/preview-blog-ordenador.png)
 
 ---
 

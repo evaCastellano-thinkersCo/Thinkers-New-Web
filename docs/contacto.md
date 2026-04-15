@@ -34,13 +34,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview contacto - mobile](img/preview-contacto-mobile.png)
+![Preview contacto - mobile](img/contacto/preview-contacto-mobile.png)
 
 ### Tablet
-![Preview contacto - tablet](img/preview-contacto-tablet.png)
+![Preview contacto - tablet](img/contacto/preview-contacto-tablet.png)
 
 ### Ordenador
-![Preview contacto - ordenador](img/preview-contacto-ordenador.png)
+![Preview contacto - ordenador](img/contacto/preview-contacto-ordenador.png)
 
 ---
 
@@ -95,7 +95,7 @@ Para que los datos del cliente se envíen correctamente al mail y google sheets 
 ### Pasos para crear el google sheets donde se recibirán los datos
 
 1. Crear un archivo de Google Sheets nuevo y hacer click en **extensiones** → **Apps Script**
-  ![Google Sheets extensiones → Apps Script](img/explicacion-formulario-1.png)
+  ![Google Sheets extensiones → Apps Script](img/contacto/explicacion-formulario-1.png)
 
 2. Borrar todo el código por defecto y añadir este:
   ```js
@@ -187,10 +187,10 @@ function doPost(e) {
 
 
 3. Hacer click en el botón de arriba a la derecha **Implementar** y seleccionar **Nueva implementación**. Después **Seleccionar tipo** → **Aplicacion web**
-![Apps Script - Nueva implementación](img/explicacion-formulario-2.png)
+![Apps Script - Nueva implementación](img/contacto/explicacion-formulario-2.png)
 
 4. Añadirle una descripción, ejecutar como **Yo** y permitir acceso a cualquier usuario
-  ![Apps Script - Configuración](img/explicacion-formulario-3.png) 
+  ![Apps Script - Configuración](img/contacto/explicacion-formulario-3.png) 
 
 5. Hacer click en **Implementar** y copiar la URL que se genera debajo del título **Aplicación web** (la url debe acabar en ``/exec``)
 

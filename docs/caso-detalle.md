@@ -31,13 +31,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview caso detalle - mobile](img/preview-caso-detalle-mobile.png)
+![Preview caso detalle - mobile](img/caso/preview-caso-detalle-mobile.png)
 
 ### Tablet
-![Preview caso detalle - tablet](img/preview-caso-detalle-tablet.png)
+![Preview caso detalle - tablet](img/caso/preview-caso-detalle-tablet.png)
 
 ### Ordenador
-![Preview caso detalle - ordenador](img/preview-caso-detalle-ordenador.png)
+![Preview caso detalle - ordenador](img/caso/preview-caso-detalle-ordenador.png)
 ---
 
 ## Estructura relevante

@@ -34,13 +34,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview insight detalle - mobile](img/preview-insight-detalle-mobile.png)
+![Preview insight detalle - mobile](img/insight/preview-insight-detalle-mobile.png)
 
 ### Tablet
-![Preview insight detalle - tablet](img/preview-insight-detalle-tablet.png)
+![Preview insight detalle - tablet](img/insight/preview-insight-detalle-tablet.png)
 
 ### Ordenador
-![Preview insight detalle - ordenador](img/preview-insight-detalle-ordenador.png)
+![Preview insight detalle - ordenador](img/insight/preview-insight-detalle-ordenador.png)
 
 ---
 

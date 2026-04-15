@@ -34,13 +34,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview politica de privacidad - mobile](img/preview-politica-privacidad-mobile.png)
+![Preview politica de privacidad - mobile](img/politica-privacidad/preview-politica-privacidad-mobile.png)
 
 ### Tablet
-![Preview politica de privacidad - tablet](img/preview-politica-privacidad-tablet.png)
+![Preview politica de privacidad - tablet](img/politica-privacidad/preview-politica-privacidad-tablet.png)
 
 ### Ordenador
-![Preview politica de privacidad - ordenador](img/preview-politica-privacidad-ordenador.png)
+![Preview politica de privacidad - ordenador](img/politica-privacidad/preview-politica-privacidad-ordenador.png)
 
 ---
 

@@ -30,13 +30,13 @@ Incluye:
 ---
 ## Capturas de pantalla
 ### Mobile
-![Preview insights - mobile](img/preview-insights-mobile.png)
+![Preview insights - mobile](img/insight/preview-insights-mobile.png)
 
 ### Tablet
-![Preview insights - tablet](img/preview-insights-tablet.png)
+![Preview insights - tablet](img/insight/preview-insights-tablet.png)
 
 ### Ordenador
-![Preview insights - ordenador](img/preview-insights-ordenador.png)
+![Preview insights - ordenador](img/insight/preview-insights-ordenador.png)
 
 ---
 
