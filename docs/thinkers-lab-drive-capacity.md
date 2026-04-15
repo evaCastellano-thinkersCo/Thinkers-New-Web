@@ -1,9 +1,8 @@
-<!-- FIXME: ¿Uno los 3 thinkers lab-drive-capacity en este o hago cada uno separado? -->
-# Thinkers Lab
+# Thinkers Lab / Thinkers Drive / Thinkers Capacity
 
 ## Descripción
 
-Página 
+Páginas explicativas de Thinkers Lab / Thinkers Drive / Thinkers Capacity. Todas ellas comparten la misma estructura.
 
 Incluye:
 - Navegación principal del sitio
@@ -66,7 +65,7 @@ thinkers-lab.html
 - Logo
 - Menú de navegación principal
 
-### 2. Thinkers Lab
+### 2. Thinkers Lab / Thinkers Drive / Thinkers Capacity
 
 - Título
 - Pequeña descripción
@@ -74,7 +73,7 @@ thinkers-lab.html
 - Título de sección y descripción
 
 ### 3. Servicios
-Listado de servicios relacionados con thinkers lab
+Listado de servicios relacionados con Thinkers Lab / Thinkers Drive / Thinkers Capacity
 
 ### 4. Casos destacados
 Listado de los 3 casos más destacados de Thinkers co.

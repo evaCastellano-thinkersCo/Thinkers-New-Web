@@ -262,6 +262,34 @@ Se puede modificar:
 - Los estilos → buscando las clases correspondientes en `assets/css/style.css`
 - Las animaciones → `assets/js/main.js` + GSAP
 
+
+### Funcionamiento de las clases botón (btn)
+Cada botón debe tener tanto la clase ``btn`` como la ``btn_primary`` / ``btn_secondary`` / ``btn_tertiary``.
+
+La clase ``btn`` sirve para darle forma al botón, ajustar margenes, etc. Mientras que las clases ``btn_primary`` / ``btn_secondary`` / ``btn_tertiary`` sirven para darle los colores distintivos.
+
+Por ejemplo:
+```css
+.btn {
+    padding: 16px 32px;
+    margin-left: 0;
+    display: inline-block;
+    border-radius: 24px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, padding-right 0.3s ease;
+    margin: 1rem;
+    border: 0;
+}
+```
+
+```css
+.btn_primary {
+    background-color: var(--default-btn-primary);
+    color: var(--btn-primary-color);
+}
+```
+Aquí se le están asignando al color de fondo y al color de texto las variables creadas al inicio del documento ``style.css``.
+
+
 ---
 
 ## Licencia

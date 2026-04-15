@@ -1,12 +1,4 @@
 {
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#233543",
-    "titleBar.inactiveBackground": "#233543",
-    "titleBar.activeForeground": "#f3f3f5",
-    "titleBar.inactiveForeground": "#a8a8ad",
-    "statusBar.background": "#233543",
-    "statusBar.foreground": "#f3f3f5"
-  },
   "files.autoSave": "afterDelay",
   "editor.wordWrap": "on"
 }
