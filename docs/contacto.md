@@ -86,10 +86,148 @@ assets/
 - Navegación secundaria
 
 ---
-<!--
-## Cómo funciona el formulario con envío de email
 
- TODO: explicar como se envia (excel y mail) y como crearlo de 0 -->
+## Cómo funciona el formulario con envío email y google sheets
+Para que los datos del cliente se envíen correctamente al mail y google sheets asignados tienen que estar presentes los siguientes elementos:
+
+ - El id dentro de ``<form method="post" id="contact-form">`` tiene que coincidir con ``const form = document.getElementById("contact-form");`` en el script de "botón enviar clickable" y ``var form = document.getElementById("contact-form");`` en el script de "funcionalidad formulario".
+
+### Pasos para crear el google sheets donde se recibirán los datos
+
+1. Crear un archivo de Google Sheets nuevo y hacer click en **extensiones** → **Apps Script**
+  ![Google Sheets extensiones → Apps Script](img/explicacion-formulario-1.png)
+
+2. Borrar todo el código por defecto y añadir este:
+  ```js
+function limpiarTexto(texto) {
+  return texto ? texto.toString().replace(/<[^>]*>?/gm, "") : "";
+}
+
+function doPost(e) {
+
+  const token = e.parameter.token;
+
+  // TOKEN
+  const TOKEN_SECRETO = "abc123456";
+
+  if (token !== TOKEN_SECRETO) {
+    return ContentService.createTextOutput("ERROR");
+  }
+
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
+  // RECIBIR DATOS
+  const nombre = e.parameter.nombre;
+  const email = e.parameter.email;
+  const asunto = e.parameter.asunto;
+  const mensaje = e.parameter.mensaje;
+  const telefonoRaw = e.parameter.telefono;
+
+  // NORMALIZAR DATOS
+  const emailSeguro = limpiarTexto(email).toLowerCase();
+  const nombreSeguro = limpiarTexto(nombre);
+  const asuntoSeguro = limpiarTexto(asunto);
+  const mensajeSeguro = limpiarTexto(mensaje);
+
+  const telefono = telefonoRaw
+    ? telefonoRaw.toString().replace(/\s/g, "")
+    : "";
+
+  // VALIDACIONES
+  if (!emailSeguro || !emailSeguro.includes("@")) {
+    return ContentService.createTextOutput("EMAIL_ERROR");
+  }
+
+  if (!mensajeSeguro || mensajeSeguro.length < 5) {
+    return ContentService.createTextOutput("MENSAJE_ERROR");
+  }
+
+  if (telefono && !/^\d+$/.test(telefono)) {
+    return ContentService.createTextOutput("PHONE_ERROR");
+  }
+
+  // ANTI-SPAM
+  const cache = CacheService.getScriptCache();
+  const spamKey = emailSeguro;
+
+  if (cache.get(spamKey)) {
+    return ContentService.createTextOutput("SPAM");
+  }
+
+  cache.put(spamKey, "1", 60);
+
+  // GUARDAR EN GOOGLE SHEETS
+  sheet.appendRow([
+    nombreSeguro,
+    emailSeguro,
+    telefono,
+    asuntoSeguro,
+    mensajeSeguro,
+    new Date()
+  ]);
+
+  // EMAIL ADMIN
+  MailApp.sendEmail({
+    to: "EMAIL@thinkersco.com",
+    subject: "Nuevo mensaje: " + asuntoSeguro,
+    body:
+      "Has recibido un nuevo mensaje:\n\n" +
+      "Nombre: " + nombreSeguro + "\n" +
+      "Email: " + emailSeguro + "\n" +
+      "Teléfono: " + telefono + "\n\n" +
+      "Mensaje:\n" + mensajeSeguro
+  });
+
+  return ContentService.createTextOutput("OK");
+}
+  ```
+
+>[!IMPORTANT]Importante
+> Cambiar la dirección email a la deseada
+
+
+3. Hacer click en el botón de arriba a la derecha **Implementar** y seleccionar **Nueva implementación**. Después **Seleccionar tipo** → **Aplicacion web**
+![Apps Script - Nueva implementación](img/explicacion-formulario-2.png)
+
+4. Añadirle una descripción, ejecutar como **Yo** y permitir acceso a cualquier usuario
+  ![Apps Script - Configuración](img/explicacion-formulario-3.png) 
+
+5. Hacer click en **Implementar** y copiar la URL que se genera debajo del título **Aplicación web** (la url debe acabar en ``/exec``)
+
+6. Poner esa url en la parte de código JavaScript de ``contacto.html`` correspondiente:
+```html
+<!-- Funcionalidad formulario -->
+  <script>
+    const form = document.getElementById("contact-form");
+    const estado = document.getElementById("estado");
+
+    const URL = "PEGAR URL AQUÍ";
+
+```
+
+>[!NOTE]Nota
+> El código analiza si el cliente ha enviado carácteres <> y rechaza el envío en su caso.
+
+
+
+> [!NOTE]Nota
+> También comprueba que el email contenga ``@``, que el mensaje tenga más de 5 caracteres y que el número de teléfono sea numérico.
+
+
+
+>[!NOTE]Nota
+> Tiene un pequeño control de Spam para que la misma dirección de correo electrónico no pueda enviar muchos mails en un determinado periodo de tiempo (en este caso 60 segundos)
+```js
+const cache = CacheService.getScriptCache();
+  const spamKey = emailSeguro;
+
+  if (cache.get(spamKey)) {
+    return ContentService.createTextOutput("SPAM");
+  }
+
+  cache.put(spamKey, "1", 60);
+```
+  Apps Script
 
 ---
 

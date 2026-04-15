@@ -138,7 +138,7 @@ Para cambiar el vídeo a reproducir pegar la url en ``href``, y para cambiar la 
   </div>
   <!-- End Video Popup -->
 ```
-> [!IMPORTANT]
+> [!IMPORTANT]Importante
 > El bloque "Start Video Popup" tiene que estar fuera del div con el id "scrollsmoother-container" porque si no no aparece centrado.
 
 ---

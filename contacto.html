@@ -152,35 +152,34 @@
               </h2>
             </div>
             <div class="cs_height_80 cs_height_lg_20"></div>
+
+            <!-- start formulario -->
             <div class="cs_from anim_div_ShowDowns">
-              <!-- TODO: 
-               - action
-               -->
-              <form method="post" action="" id="contact-form">
+              <form method="post" id="contact-form">
                 <div class="row">
                   <div class="cs_field_group col">
-                    <input class="cs_input_field" type="text" id="test1" placeholder="Name" name="name" required />
+                    <input class="cs_input_field" type="text" placeholder="Name" name="nombre" required />
                     <label for="test1" class="cs_input_label">Nombre</label>
                   </div>
                   <div class="cs_field_group col">
-                    <input class="cs_input_field" type="email" id="test2" placeholder="Name" name="email" required />
+                    <input class="cs_input_field" type="email" placeholder="Name" name="email" required />
                     <label for="test2" class="cs_input_label">Email</label>
                   </div>
                 </div>
                 <div class="cs_height_10 cs_height_lg_20"></div>
                 <div class="row">
                   <div class="cs_field_group col">
-                    <input class="cs_input_field" type="number" id="test3" placeholder="Name" name="phone" required />
+                    <input class="cs_input_field" type="number" placeholder="Name" name="telefono" required />
                     <label for="test3" class="cs_input_label">N. de teléfono</label>
                   </div>
                   <div class="cs_field_group col">
-                    <input class="cs_input_field" type="text" id="test4" placeholder="Name" name="subject" required />
+                    <input class="cs_input_field" type="text" placeholder="Name" name="asunto" required />
                     <label for="test4" class="cs_input_label">Asunto</label>
                   </div>
                 </div>
                 <div class="cs_height_40 cs_height_lg_60"></div>
                 <div class="cs_field_group">
-                  <textarea class="cs_input_field" id="test5" placeholder="Message" name="message" required></textarea>
+                  <textarea class="cs_input_field" placeholder="Message" name="mensaje" required></textarea>
                   <label for="test5" class="cs_input_label">Mensaje</label>
                 </div>
                 <div class="cs_height_60 cs_height_lg_60"></div>
@@ -193,6 +192,9 @@
                     el envío de información solicitada y de comunicaciones comerciales.</label>
                 </div>
 
+
+                <input type="hidden" name="token" value="abc123456">
+
                 <button type="submit" class="btn btn_primary" id="contact-submit" disabled>
                   <span>Enviar</span>
                   <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,10 +203,11 @@
                       fill="currentColor"></path>
                   </svg>
                 </button>
+                <p id="estado"></p>
               </form>
-
-
             </div>
+            <!-- end formulario -->
+
           </div>
 
           <!-- start mapa -->
@@ -548,6 +551,53 @@
       });
 
       updateSubmitState();
+    });
+  </script>
+
+  <!-- Funcionalidad formulario -->
+  <script>
+    const form = document.getElementById("contact-form");
+    const estado = document.getElementById("estado");
+
+    const URL = "https://script.google.com/macros/s/AKfycbzie6NDVN6bEgqUaqGTb7o7R1Q4XDnhLPIjciti1nUjRX2K03bS1IjXnBJFQW6TbDbMXw/exec";
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const nombre = form.nombre.value;
+      const asunto = form.asunto.value;
+      const mensaje = form.mensaje.value;
+
+      const regex = /[<>]/;
+
+      if (regex.test(nombre) || regex.test(asunto) || regex.test(mensaje)) {
+        estado.innerText = "Error, no se pueden introducir los símbolos < o >";
+        return;
+      }
+
+      estado.innerText = "Enviando...";
+
+      const formData = new FormData(form);
+
+      try {
+        const res = await fetch(URL, {
+          method: "POST",
+          body: formData
+        });
+
+        const text = await res.text();
+
+        if (text === "OK") {
+          estado.innerText = "Mensaje enviado correctamente";
+          form.reset();
+        } else {
+          estado.innerText = "Error al enviar";
+        }
+
+      } catch (err) {
+        estado.innerText = "Error de conexión";
+        console.error(err);
+      }
     });
   </script>
 </body>

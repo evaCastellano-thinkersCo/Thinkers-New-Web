@@ -233,7 +233,7 @@ el siguiente bloque:
     </div>
 </div>
 ```
-> [!NOTE]  
+> [!NOTE]Nota  
 > La imagen actúa como título y esta debe ser de 16:9
 
 
