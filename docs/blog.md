@@ -108,7 +108,7 @@ Ejemplo:
   <a href="blog-detalle/nuevo-post.html">
     <div class="cs_post">
       <div class="cs_post_thumb">
-        <img src="../assets/img/placeholder3.png" />
+        <img src="/assets/img/placeholder3.png" />
       </div>
       <div class="cs_post_info">
         <h2 class="cs_post_title">Título del post</h2>

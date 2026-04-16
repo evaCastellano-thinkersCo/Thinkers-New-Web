@@ -235,7 +235,7 @@ MailApp.sendEmail({
 
     if (!form || !submitButton) return;
     /* Ruta donde está almacenado el pdf */
-    var pdfUrl = "../insight-pdfs/Informe 1_Thinkers Insights Series_El nuevo consumo_Dossier.pdf";
+    var pdfUrl = "/insight-pdfs/Informe 1_Thinkers Insights Series_El nuevo consumo_Dossier.pdf";
 
     /* Enlace Apps Script */
     var appsScriptUrl = "PEGAR URL AQUÍ";

@@ -108,7 +108,7 @@ HTML necesario:
       <div class="cs_parallax">
         <a href="https://player.vimeo.com/video/1096155294?h=b910ce64dd"
           class="cs_video_block cs_style1 cs_video_open cs_bg cs_parallax_bg cs_video_preview_overlay"
-          data-src="../../assets/img/preview-video.png">
+          data-src="/assets/img/preview-video.png">
           <span class="cs_player_btn cs_accent_color">
             <span></span>
           </span>

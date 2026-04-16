@@ -107,7 +107,7 @@ Ejemplo:
     <a href="caso-detalle/ibercaja.html" class="cs_featured_case_link">
     <div class="cs_post cs_style_1">
         <div class="cs_post_thumb">
-        <img src="../assets/img/casos/caso_ibercaja.png" alt="Thumb" />
+        <img src="/assets/img/casos/caso_ibercaja.png" alt="Thumb" />
         </div>
         <div class="cs_post_info">
         <h2 class="cs_post_title">Título</h2>
