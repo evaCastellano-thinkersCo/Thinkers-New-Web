@@ -5444,6 +5444,10 @@ input:-webkit-autofill {
     border: 0;
 }
 
+.btn.margin_0 {
+    margin: 5px;
+}
+
 .btn:hover {
     padding-right: 24px;
 }
