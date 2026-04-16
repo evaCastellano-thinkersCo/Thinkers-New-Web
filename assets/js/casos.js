@@ -1,22 +1,24 @@
 fetch('/casos/index.html')
-  .then(res => res.text())
-  .then(html => {
+  .then((res) => res.text())
+  .then((html) => {
+    const contenedor = document.getElementById('destino');
+
+    if (!contenedor) {
+      return;
+    }
+
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
 
-    // Seleccionamos TODOS los casos
+    // Clonamos el bloque completo para conservar la estructura que usa el CSS.
     const casos = doc.querySelectorAll('.cs_featured_case_item');
-
-    // Cogemos los 3 primeros
     const primeros3 = Array.from(casos).slice(0, 3);
+    const fragmento = document.createDocumentFragment();
 
-    const contenedor = document.getElementById('destino');
-
-    primeros3.forEach(caso => {
-      // clonamos el nodo completo
-      const clon = caso.cloneNode(true);
-
-      contenedor.appendChild(clon);
+    primeros3.forEach((caso) => {
+      fragmento.appendChild(caso.cloneNode(true));
     });
+
+    contenedor.replaceChildren(fragmento);
   })
-  .catch(err => console.error('Error cargando casos:', err));
+  .catch((err) => console.error('Error cargando casos:', err));
