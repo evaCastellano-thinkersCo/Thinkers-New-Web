@@ -61,6 +61,8 @@
 :root {
     /* --body-font-family: "Montserrat", sans-serif;
     --heading-font-family: "Montserrat", sans-serif; */
+    --body-font-family: "Plus Jakarta Sans", sans-serif;
+    --heading-font-family: "Plus Jakarta Sans", sans-serif;
     --accent-color: #F79837;
     --body-color: #6E7681;
     --heading-color: #131416;
