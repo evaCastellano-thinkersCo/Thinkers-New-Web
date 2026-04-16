@@ -1,5 +1,25 @@
 # Contacto
 
+# Índice
+- [Contacto](#contacto)
+- [Índice](#índice)
+  - [Descripción](#descripción)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+    - [Librerías y plugins](#librerías-y-plugins)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Ordenador](#ordenador)
+  - [Estructura relevante](#estructura-relevante)
+  - [Estructura de la página](#estructura-de-la-página)
+    - [1. Header / Navbar](#1-header--navbar)
+    - [2. Política de privacidad](#2-política-de-privacidad)
+    - [3. CTA (Call To Action)](#3-cta-call-to-action)
+    - [4. Footer](#4-footer)
+  - [Dependencias JS](#dependencias-js)
+  - [Personalización](#personalización)
+  - [Licencia](#licencia)
+
 ## Descripción
 
 Página de la política de privacidad de la empresa.

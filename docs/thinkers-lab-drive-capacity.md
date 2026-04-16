@@ -1,5 +1,28 @@
 # Thinkers Lab / Thinkers Drive / Thinkers Capacity
 
+# Índice
+- [Thinkers Lab / Thinkers Drive / Thinkers Capacity](#thinkers-lab--thinkers-drive--thinkers-capacity)
+- [Índice](#índice)
+  - [Descripción](#descripción)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+    - [Librerías y plugins](#librerías-y-plugins)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Ordenador](#ordenador)
+  - [Estructura relevante](#estructura-relevante)
+  - [Estructura de la página](#estructura-de-la-página)
+    - [1. Header / Navbar](#1-header--navbar)
+    - [2. Thinkers Lab / Thinkers Drive / Thinkers Capacity](#2-thinkers-lab--thinkers-drive--thinkers-capacity)
+    - [3. Servicios](#3-servicios)
+    - [4. Casos destacados](#4-casos-destacados)
+    - [5. CTA (Call To Action)](#5-cta-call-to-action)
+    - [6. Footer](#6-footer)
+  - [Cómo añadir un nuevo servicio](#cómo-añadir-un-nuevo-servicio)
+  - [Dependencias JS](#dependencias-js)
+  - [Personalización](#personalización)
+  - [Licencia](#licencia)
+
 ## Descripción
 
 Páginas explicativas de Thinkers Lab / Thinkers Drive / Thinkers Capacity. Todas ellas comparten la misma estructura.

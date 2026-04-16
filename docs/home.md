@@ -1,5 +1,37 @@
 # Home 
 
+# Índice
+- [Home](#home)
+- [Índice](#índice)
+  - [Descripción](#descripción)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+    - [Librerías y plugins](#librerías-y-plugins)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Ordenador](#ordenador)
+  - [Estructura relevante](#estructura-relevante)
+  - [Estructura de la página](#estructura-de-la-página)
+    - [1. Header / Navbar](#1-header--navbar)
+    - [2. Hero](#2-hero)
+    - [3. Logos de clientes / partners](#3-logos-de-clientes--partners)
+    - [4. Propuesta de valor](#4-propuesta-de-valor)
+    - [5. Reenfoque](#5-reenfoque)
+    - [6. Cómo podemos ayudarte](#6-cómo-podemos-ayudarte)
+    - [7. Ejes de actuación](#7-ejes-de-actuación)
+    - [8. Casos destacados](#8-casos-destacados)
+    - [9. Insights](#9-insights)
+    - [10. CTA (Call To Action)](#10-cta-call-to-action)
+    - [11. Footer](#11-footer)
+  - [Cómo añadir un nuevo reenfoque](#cómo-añadir-un-nuevo-reenfoque)
+  - [Cómo añadir una nueva tarjeta en "como podemos ayudarte"](#cómo-añadir-una-nueva-tarjeta-en-como-podemos-ayudarte)
+  - [Cómo añadir un nuevo eje de actuación](#cómo-añadir-un-nuevo-eje-de-actuación)
+  - [Cómo añadir un nuevo caso destacado](#cómo-añadir-un-nuevo-caso-destacado)
+  - [Dependencias JS](#dependencias-js)
+  - [Personalización](#personalización)
+    - [Funcionamiento de las clases botón (btn)](#funcionamiento-de-las-clases-botón-btn)
+  - [Licencia](#licencia)
+
 ## Descripción
 
 Página principal del sitio web de la empresa. Actúa como punto de entrada y presentación general de la marca, mostrando su propuesta de valor, servicios principales, casos destacados e insights.

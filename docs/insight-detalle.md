@@ -1,5 +1,28 @@
 # Insight detalle
 
+# Índice
+- [Insight detalle](#insight-detalle)
+- [Índice](#índice)
+  - [Descripción](#descripción)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+    - [Librerías y plugins](#librerías-y-plugins)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Ordenador](#ordenador)
+  - [Estructura relevante](#estructura-relevante)
+  - [Estructura de la página](#estructura-de-la-página)
+    - [1. Header / Navbar](#1-header--navbar)
+    - [2. Insight](#2-insight)
+    - [3. Descarga](#3-descarga)
+    - [4. CTA (Call To Action)](#4-cta-call-to-action)
+    - [5. Footer](#5-footer)
+  - [Cómo funciona la descarga de pdf y el envío de datos a google sheets y mail](#cómo-funciona-la-descarga-de-pdf-y-el-envío-de-datos-a-google-sheets-y-mail)
+  - [Funcionamiento breadcrumbs](#funcionamiento-breadcrumbs)
+  - [Dependencias JS](#dependencias-js)
+  - [Personalización](#personalización)
+  - [Licencia](#licencia)
+
 ## Descripción
 
 Página de un caso específico de todos los casos de Thinkers Co. donde se muestra la información detallada de dicho caso.

@@ -1,5 +1,26 @@
 # Casos
 
+# Índice
+- [Casos](#casos)
+- [Índice](#índice)
+  - [Descripción](#descripción)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+    - [Librerías y plugins](#librerías-y-plugins)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Ordenador](#ordenador)
+  - [Estructura relevante](#estructura-relevante)
+  - [Estructura de la página](#estructura-de-la-página)
+    - [1. Header / Navbar](#1-header--navbar)
+    - [2. Sección Casos](#2-sección-casos)
+    - [3. CTA (Call To Action)](#3-cta-call-to-action)
+    - [4. Footer](#4-footer)
+  - [Cómo añadir un nuevo caso](#cómo-añadir-un-nuevo-caso)
+  - [Dependencias JS](#dependencias-js)
+  - [Personalización](#personalización)
+  - [Licencia](#licencia)
+
 ## Descripción
 
 Página de listado de todos los casos que ha realizado Thinkers co.

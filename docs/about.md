@@ -1,5 +1,27 @@
 # Nosotros
 
+# Índice
+- [Nosotros](#nosotros)
+- [Índice](#índice)
+  - [Descripción](#descripción)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+    - [Librerías y plugins](#librerías-y-plugins)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Ordenador](#ordenador)
+  - [Estructura relevante](#estructura-relevante)
+  - [Estructura de la página](#estructura-de-la-página)
+    - [1. Header / Navbar](#1-header--navbar)
+    - [2. Sección Sobre nosotros](#2-sección-sobre-nosotros)
+    - [3. Nuestros Premios](#3-nuestros-premios)
+    - [4. CTA (Call To Action)](#4-cta-call-to-action)
+    - [5. Footer](#5-footer)
+  - [Cómo añadir un nuevo premio](#cómo-añadir-un-nuevo-premio)
+  - [Dependencias JS](#dependencias-js)
+  - [Personalización](#personalización)
+  - [Licencia](#licencia)
+
 ## Descripción
 
 Página de descripción sobre la empresa, explicando el recorrido cronológicamente y enseñando algunos de los premios que ha conseguido el equipo.

@@ -1,5 +1,28 @@
 # Caso detalle
 
+# Índice
+- [Caso detalle](#caso-detalle)
+- [Índice](#índice)
+  - [Descripción](#descripción)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+    - [Librerías y plugins](#librerías-y-plugins)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Ordenador](#ordenador)
+  - [Estructura relevante](#estructura-relevante)
+  - [Estructura de la página](#estructura-de-la-página)
+    - [1. Header / Navbar](#1-header--navbar)
+    - [2. Sección Caso](#2-sección-caso)
+    - [3. CTA (Call To Action)](#3-cta-call-to-action)
+    - [4. Footer](#4-footer)
+  - [Funcionamiento breadcrumbs](#funcionamiento-breadcrumbs)
+  - [Chips](#chips)
+  - [Cita](#cita)
+  - [Dependencias JS](#dependencias-js)
+  - [Personalización](#personalización)
+  - [Licencia](#licencia)
+
 ## Descripción
 
 Página de un caso específico de todos los casos de Thinkers Co. donde se muestra la información detallada de dicho caso.
@@ -38,6 +61,7 @@ Incluye:
 
 ### Ordenador
 ![Preview caso detalle - ordenador](img/caso/preview-caso-detalle-ordenador.png)
+
 ---
 
 ## Estructura relevante

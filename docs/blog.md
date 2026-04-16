@@ -1,5 +1,26 @@
 # Blog
 
+# Índice
+- [Blog](#blog)
+- [Índice](#índice)
+  - [Descripción](#descripción)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+    - [Librerías y plugins](#librerías-y-plugins)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Ordenador](#ordenador)
+  - [Estructura relevante](#estructura-relevante)
+  - [Estructura de la página](#estructura-de-la-página)
+    - [1. Header / Navbar](#1-header--navbar)
+    - [2. Sección Blog](#2-sección-blog)
+    - [3. CTA (Call To Action)](#3-cta-call-to-action)
+    - [4. Footer](#4-footer)
+  - [Cómo añadir un nuevo post](#cómo-añadir-un-nuevo-post)
+  - [Dependencias JS](#dependencias-js)
+  - [Personalización](#personalización)
+  - [Licencia](#licencia)
+
 ## Descripción
 
 Página de listado de artículos del blog de Thinkers Co. donde se muestran diferentes publicaciones relacionadas con innovación, diseño, estrategia y transformación empresarial.
@@ -105,7 +126,7 @@ Ejemplo:
 
 ```html
 <div class="cs_featured_case_item">
-  <a href="blog-detalle/nuevo-post.html">
+  <a href="blog-detalle/nuevo-post.html"> <!-- Enlace al archivo de blog-detalle -->
     <div class="cs_post">
       <div class="cs_post_thumb">
         <img src="/assets/img/placeholder3.png" />
