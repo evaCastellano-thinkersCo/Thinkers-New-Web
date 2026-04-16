@@ -3632,14 +3632,20 @@ input:-webkit-autofill {
     box-shadow: none;
 }
 
+/* Quitar la transparencia a el header */
+.cs_site_header.cs_style1.cs_header_no_transparency {
+    background-color: var(--gray-00);
+    box-shadow: none;
+}
+
 .cs_site_header.cs_style1.cs_scrolled {
     background-color: var(--gray-00);
-    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
+    box-shadow: none;
 }
 
 .cs_site_header.cs_style1.cs_sticky-active {
     background-color: var(--gray-00);
-    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
+    box-shadow: none;
 }
 
 .cs_site_header.cs_style1 .cs_icon_btn {
