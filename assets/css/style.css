@@ -3628,7 +3628,13 @@ input:-webkit-autofill {
 }
 
 .cs_site_header.cs_style1 {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.cs_site_header.cs_style1.cs_scrolled {
     background-color: var(--gray-00);
+    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
 }
 
 .cs_site_header.cs_style1.cs_sticky-active {
@@ -5082,6 +5088,14 @@ input:-webkit-autofill {
     background-color: rgba(255, 255, 255, 0.45);
 }
 
+/* FIXME: overlay blanco encima de la imagen de hero */
+.cs_hero.cs_style2 .cs_hero_bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
 .cs_hero.cs_style1 .cs_hero_bg.cs_hero_bg_full_width {
     width: 100%;
 }
@@ -5156,24 +5170,36 @@ input:-webkit-autofill {
 }
 
 .cs_hero.cs_style2 .cs_hero_text .cs_hero_subtitle {
-    padding-right: 20%;
+    padding-right: 10%;
     display: flex;
-    gap: 300px;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+.cs_hero.cs_style2 .cs_hero_text .cs_hero_subtitle > .anim_subtext {
+    flex: 1 1 720px;
+    max-width: 820px;
+}
+
+.cs_hero.cs_style2 .cs_hero_text .cs_hero_subtitle > .cs_section_heading_right {
+    flex: 0 0 auto;
 }
 
 .cs_hero.cs_style2 .cs_hero_text .cs_hero_subtitle .cs_hero_mini_details {
     padding-left: 15px;
     font-size: 16px;
     font-weight: 400;
-    color: var(--common-color-white);
+    color: var(--common-color-black);
 }
 
 .cs_hero.cs_style2 .cs_hero_text .cs_hero_title.cs_hero_title_lg {
-    color: var(--common-color-white);
+    color: var(--common-color-black);
 }
 
 .cs_hero.cs_style2 .cs_hero_title.cs_hero_title_lg {
-    font-size: 150px;
+    font-size: 100px; /* 
+    FIXME:
+    Aqui se cambia el tamaño de texto del h1 del nuevo hero */
     font-weight: 900;
     margin-bottom: 0;
     line-height: 155px;
@@ -5222,7 +5248,7 @@ input:-webkit-autofill {
 }
 
 .cs_hero.cs_style2 .cs_right_text .t1 {
-    --color-1: #fff;
+    --color-1: var(--common-color-black);
     --color-2: var(--accent-color);
 }
 
@@ -5676,6 +5702,12 @@ a:hover {
         flex-wrap: wrap;
         padding-right: 0%;
         gap: 20px;
+    }
+
+    .cs_hero.cs_style2 .cs_hero_text .cs_hero_subtitle > .anim_subtext,
+    .cs_hero.cs_style2 .cs_hero_text .cs_hero_subtitle > .cs_section_heading_right {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .cs_hero.cs_style2 .cs_hero_text .cs_hero_subtitle cs_hero_text .cs_hero_mini_details {

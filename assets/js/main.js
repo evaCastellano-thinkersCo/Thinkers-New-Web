@@ -134,10 +134,12 @@
     var $window = $(window);
     var lastScrollTop = 0;
     var $header = $(".cs_sticky_header");
-    var headerHeight = $header.outerHeight() + 30;
+    var transparentThreshold = 100;
+    var headerHeight = Math.max($header.outerHeight() + 30, transparentThreshold);
 
     $window.scroll(function () {
       var windowTop = $window.scrollTop();
+      $header.toggleClass("cs_scrolled", windowTop > transparentThreshold);
 
       if (windowTop >= headerHeight) {
         $header.addClass("cs_gescout_sticky");

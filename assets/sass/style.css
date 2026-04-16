@@ -4361,7 +4361,7 @@ label {
   transition: all 4s ease;
 }
 .cs_hero.cs_style2 .cs_right_text .t1 {
-  --color-1: #fff;
+  --color-1: var(--common-color-black);
   --color-2: #ff6b00;
 }
 .cs_hero.cs_style2 .cs_right_text .t2 {

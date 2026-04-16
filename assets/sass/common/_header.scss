@@ -21,6 +21,8 @@
 }
 
 .cs_site_header.cs_style1 {
+    background-color: transparent;
+    box-shadow: none;
     .cs_main_header_in,
     .cs_top_header_in {
         display: flex;
@@ -42,6 +44,10 @@
 }
 
 .cs_site_header.cs_style1 {
+    &.cs_scrolled {
+        background-color: $white;
+        box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
+    }
     &.cs_sticky-active {
         background-color: $white;
         box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
