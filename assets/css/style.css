@@ -1079,6 +1079,7 @@ hr {
 .chips {
     font-size: 16px;
     padding: 8px 16px;
+    text-align: center;
 }
 
 .cs_white_color,
@@ -7275,10 +7276,10 @@ background-color: var(--gray-300);
     font-weight: 400;
     line-height: 33px;
 }
-
+/* 
 .cs_portfolio_details .cs_img_show_text.cs_text_style_1 {
     margin-bottom: 50px;
-}
+} */
 
 .cs_portfolio_details .cs_portfolio_detail_media {
     aspect-ratio: 16 / 9;

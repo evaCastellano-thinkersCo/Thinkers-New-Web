@@ -98,7 +98,8 @@ Para que los datos del cliente se envíen correctamente al mail y google sheets 
   ![Google Sheets extensiones → Apps Script](img/contacto/explicacion-formulario-1.png)
 
 2. Borrar todo el código por defecto y añadir este:
-  ```js
+  
+```js
 function limpiarTexto(texto) {
   return texto ? texto.toString().replace(/<[^>]*>?/gm, "") : "";
 }
@@ -180,11 +181,21 @@ function doPost(e) {
 
   return ContentService.createTextOutput("OK");
 }
-  ```
+```
 
 >[!IMPORTANT]Importante
 > Cambiar la dirección email a la deseada
-
+```js
+MailApp.sendEmail({
+    to: "EMAIL@thinkersco.com",
+    subject: "Descarga de Insight - " + insightSeguro,
+    body:
+      "Alguien ha descargado un insight:\n\n" +
+      "Nombre: " + nombreSeguro + "\n" +
+      "Email: " + emailSeguro + "\n" +
+      "Insight descargado: " + insightSeguro
+  });
+```
 
 3. Hacer click en el botón de arriba a la derecha **Implementar** y seleccionar **Nueva implementación**. Después **Seleccionar tipo** → **Aplicacion web**
 ![Apps Script - Nueva implementación](img/contacto/explicacion-formulario-2.png)
@@ -192,9 +203,10 @@ function doPost(e) {
 4. Añadirle una descripción, ejecutar como **Yo** y permitir acceso a cualquier usuario
   ![Apps Script - Configuración](img/contacto/explicacion-formulario-3.png) 
 
-5. Hacer click en **Implementar** y copiar la URL que se genera debajo del título **Aplicación web** (la url debe acabar en ``/exec``)
+5. Hacer click en **Implementar**, autorizar acceso y copiar la URL que se genera debajo del título **Aplicación web** (la url debe acabar en ``/exec``)
 
 6. Poner esa url en la parte de código JavaScript de ``contacto.html`` correspondiente:
+
 ```html
 <!-- Funcionalidad formulario -->
   <script>
@@ -225,7 +237,7 @@ const cache = CacheService.getScriptCache();
 
   cache.put(spamKey, "1", 60);
 ```
-  Apps Script
+  Apps Script ⤴
 
 ---
 
